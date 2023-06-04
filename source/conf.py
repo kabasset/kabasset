@@ -14,7 +14,7 @@ copyright = '2023, Antoine Basset'
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = []
+extensions = ['sphinx.ext.githubpages']
 source_suffix = '.rst'
 templates_path = ['_templates']
 master_doc = 'index'
