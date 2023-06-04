@@ -1,0 +1,12 @@
+table.docutils, table.docutils td, table.docutils th, table.docutils tr {
+    border: none;
+    box-shadow: none;
+}
+
+table.docutils th {
+    border-bottom: thin solid;
+}
+
+table.docutils td {
+    border-bottom: thin dotted;
+}
