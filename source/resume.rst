@@ -190,11 +190,11 @@ Supervision
    ==== ====
    Master 2 Research internships
    =========
-   2017 Peter Kettig from Université Toulouse III (6 months)
+   2017 Peter Kettig, Université Toulouse III (6 months)
    \    * Image processing
         * Library benchmarking (C++, Python)
         * Software development (C++)
-   2015 Vincent Briane from INSA Rouen (6 months, co-supervisor)
+   2015 Vincent Briane, INSA Rouen (6 months, co-supervisor)
    \    * Intracellular microscopy
         * Bayesian image processing
    ==== ====

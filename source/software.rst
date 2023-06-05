@@ -36,6 +36,7 @@ Linx:
 
 https://github.com/kabasset/Linx
 
+
 .. image:: https://raw.githubusercontent.com/CNES/EleFits/develop/doc/diagrams/out/elefits_square.svg
    :alt: EleFits
    :width: 20%
@@ -71,6 +72,12 @@ EleFits:
 
 https://github.com/CNES/EleFits
 
+
+.. image:: https://raw.githubusercontent.com/kabasset/Splider/develop/doc/diagrams/logo_square.svg
+   :alt: Splider
+   :width: 20%
+   :align: right
+   :target: https://github.com/kabasset/Splider
 
 Splider
 -------

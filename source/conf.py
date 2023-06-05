@@ -38,6 +38,12 @@ html_copy_source = False
 html_show_sourcelink = False
 html_show_copyright = False
 
+html_theme_options = {
+    'fixed_sidebar': True,
+    'show_relbars': True,
+    # 'logo': 'https://raw.githubusercontent.com/kabasset/Linx/develop/doc/diagrams/logo_notext.png',
+}
+
 # -- Options for BibTeX ------------------------------------------------------
 # https://sphinxcontrib-bibtex.readthedocs.io/en/latest/usage.html#configuration
 

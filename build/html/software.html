@@ -23,100 +23,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
 
   </head><body>
-  
-
-    <div class="document">
-      <div class="documentwrapper">
-        <div class="bodywrapper">
-          
-
-          <div class="body" role="main">
-            
-  <section id="software">
-<h1>Software</h1>
-<a class="reference external image-reference" href="https://github.com/kabasset/Linx"><img alt="Linx" class="align-right" src="https://raw.githubusercontent.com/kabasset/Linx/develop/doc/diagrams/logo_square.svg" width="20%" /></a>
-<section id="linx">
-<h2>Linx</h2>
-<p>Linx is a multidimensional image processing library focused on ease of use and which interfaces seamlessly with the standard C++ library.
-For performance and extensibility, it relies heavily on template metaprogramming.</p>
-<p>Here is a comparison with NumPy.
-Simple array instantiations and operations are performed:</p>
-<div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
-<span class="n">f</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-<span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">((</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">int</span><span class="p">)</span>
-<span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">default_rng</span><span class="p">()</span><span class="o">.</span><span class="n">random</span><span class="p">((</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
-<span class="n">c</span> <span class="o">=</span> <span class="n">b</span> <span class="o">-</span> <span class="n">a</span>
-</pre></div>
-</div>
-<p>Linx:</p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="k">auto</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Linx</span><span class="o">::</span><span class="n">Sequence</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span><span class="p">(</span><span class="mi">100</span><span class="p">).</span><span class="n">linspace</span><span class="p">(</span><span class="mi">-1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span>
-<span class="k">auto</span><span class="w"> </span><span class="n">f</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">exp</span><span class="p">(</span><span class="n">x</span><span class="p">);</span>
-<span class="k">auto</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Linx</span><span class="o">::</span><span class="n">Raster</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="p">({</span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">}).</span><span class="n">fill</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
-<span class="k">auto</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Linx</span><span class="o">::</span><span class="n">random</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span><span class="p">({</span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">});</span>
-<span class="k">auto</span><span class="w"> </span><span class="n">c</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">a</span><span class="p">;</span>
-</pre></div>
-</div>
-<p><a class="reference external" href="https://github.com/kabasset/Linx">https://github.com/kabasset/Linx</a></p>
-<a class="reference external image-reference" href="https://github.com/CNES/EleFits"><img alt="EleFits" class="align-right" src="https://raw.githubusercontent.com/CNES/EleFits/develop/doc/diagrams/out/elefits_square.svg" width="20%" /></a>
-</section>
-<section id="elefits">
-<h2>EleFits</h2>
-<p>EleFits is a modern C++ package to read and write FITS files which focuses on safety, user-friendliness, and performance.
-At some point, the ND array implementation of EleFits should be droped in favor of Linx.</p>
-<p>Here is a comparison with CFITSIO.
-A single-image FITS file is created from a 2D array (<code class="docutils literal notranslate"><span class="pre">(width,</span> <span class="pre">height)</span> <span class="pre">-&gt;</span> <span class="pre">data</span></code>) and a keyword record (<code class="docutils literal notranslate"><span class="pre">keyword,</span> <span class="pre">value,</span> <span class="pre">comment</span></code>):</p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">long</span><span class="w"> </span><span class="n">shape</span><span class="p">[]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">width</span><span class="p">,</span><span class="w"> </span><span class="n">height</span><span class="w"> </span><span class="p">};</span>
-<span class="kt">int</span><span class="w"> </span><span class="n">status</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-<span class="n">fitsfile</span><span class="o">*</span><span class="w"> </span><span class="n">fits</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">nullptr</span><span class="p">;</span>
-<span class="n">fits_create_file</span><span class="p">(</span><span class="o">&amp;</span><span class="n">fits</span><span class="p">,</span><span class="w"> </span><span class="n">filename</span><span class="p">.</span><span class="n">c_str</span><span class="p">(),</span><span class="w"> </span><span class="o">&amp;</span><span class="n">status</span><span class="p">);</span>
-<span class="n">fits_create_img</span><span class="p">(</span><span class="n">fits</span><span class="p">,</span><span class="w"> </span><span class="n">SHORT_IMG</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="n">shape</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">status</span><span class="p">);</span>
-<span class="n">fits_write_key</span><span class="p">(</span><span class="n">fits</span><span class="p">,</span><span class="w"> </span><span class="n">TDOUBLE</span><span class="p">,</span><span class="w"> </span><span class="n">name</span><span class="p">.</span><span class="n">c_str</span><span class="p">(),</span><span class="w"> </span><span class="o">&amp;</span><span class="n">value</span><span class="p">,</span><span class="w"> </span><span class="n">comment</span><span class="p">.</span><span class="n">c_str</span><span class="p">(),</span><span class="w"> </span><span class="o">&amp;</span><span class="n">status</span><span class="p">);</span>
-<span class="n">fits_write_img</span><span class="p">(</span><span class="n">fits</span><span class="p">,</span><span class="w"> </span><span class="n">TSHORT</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">width</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">height</span><span class="p">,</span><span class="w"> </span><span class="n">data</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">status</span><span class="p">);</span>
-</pre></div>
-</div>
-<p>EleFits:</p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">Fits</span><span class="o">::</span><span class="n">SifFile</span><span class="w"> </span><span class="nf">fits</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span><span class="w"> </span><span class="n">Fits</span><span class="o">::</span><span class="n">FileMode</span><span class="o">::</span><span class="n">CREATE</span><span class="p">);</span>
-<span class="n">fits</span><span class="p">.</span><span class="n">header</span><span class="p">().</span><span class="n">write</span><span class="p">(</span><span class="n">keyword</span><span class="p">,</span><span class="w"> </span><span class="n">value</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">comment</span><span class="p">);</span>
-<span class="n">fits</span><span class="p">.</span><span class="n">raster</span><span class="p">().</span><span class="n">write</span><span class="p">(</span><span class="n">makeRaster</span><span class="p">(</span><span class="n">data</span><span class="p">,</span><span class="w"> </span><span class="n">width</span><span class="p">,</span><span class="w"> </span><span class="n">height</span><span class="p">));</span>
-</pre></div>
-</div>
-<p><a class="reference external" href="https://github.com/CNES/EleFits">https://github.com/CNES/EleFits</a></p>
-</section>
-<section id="splider">
-<h2>Splider</h2>
-<p>Splider is a cubic spline interpolation library where a spline is a list of components (intervals, knots and arguments), which each hold their cache.
-This separation yields huge speed-ups wrt. classical libraries in some cases.</p>
-<p>Here is a comparison with GSL.
-An input 2D grid of knots (<code class="docutils literal notranslate"><span class="pre">(u0,</span> <span class="pre">u1)</span> <span class="pre">-&gt;</span> <span class="pre">v</span></code>) is interpolated along a 2D trajectory (<code class="docutils literal notranslate"><span class="pre">x</span></code>):</p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">gsl_interp_accel</span><span class="o">*</span><span class="w"> </span><span class="n">acc0</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">gsl_interp_accel_alloc</span><span class="p">();</span>
-<span class="n">gsl_interp_accel</span><span class="o">*</span><span class="w"> </span><span class="n">acc1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">gsl_interp_accel_alloc</span><span class="p">();</span>
-<span class="n">gsl_spline2d</span><span class="o">*</span><span class="w"> </span><span class="n">spline</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">gsl_spline2d_alloc</span><span class="p">(</span><span class="n">gsl_interp2d_bicubic</span><span class="p">,</span><span class="w"> </span><span class="n">u0</span><span class="p">.</span><span class="n">size</span><span class="p">(),</span><span class="w"> </span><span class="n">u1</span><span class="p">.</span><span class="n">size</span><span class="p">());</span>
-<span class="n">gsl_spline2d_init</span><span class="p">(</span><span class="n">spline</span><span class="p">,</span><span class="w"> </span><span class="n">u0</span><span class="p">.</span><span class="n">data</span><span class="p">(),</span><span class="w"> </span><span class="n">u1</span><span class="p">.</span><span class="n">data</span><span class="p">(),</span><span class="w"> </span><span class="n">v</span><span class="p">.</span><span class="n">data</span><span class="p">(),</span><span class="w"> </span><span class="n">u0</span><span class="p">.</span><span class="n">size</span><span class="p">(),</span><span class="w"> </span><span class="n">u1</span><span class="p">.</span><span class="n">size</span><span class="p">());</span>
-<span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span><span class="w"> </span><span class="n">y</span><span class="p">;</span>
-<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="k">auto</span><span class="o">&amp;</span><span class="w"> </span><span class="n">e</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="n">y</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">gsl_spline2d_eval</span><span class="p">(</span><span class="n">spline</span><span class="p">,</span><span class="w"> </span><span class="n">e</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="w"> </span><span class="n">e</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span><span class="w"> </span><span class="n">acc0</span><span class="p">,</span><span class="w"> </span><span class="n">acc1</span><span class="p">));</span>
-<span class="p">}</span>
-<span class="n">gsl_spline2d_free</span><span class="p">(</span><span class="n">spline</span><span class="p">);</span>
-<span class="n">gsl_interp_accel_free</span><span class="p">(</span><span class="n">acc0</span><span class="p">);</span>
-<span class="n">gsl_interp_accel_free</span><span class="p">(</span><span class="n">acc1</span><span class="p">);</span>
-</pre></div>
-</div>
-<p>Splider:</p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">Splider</span><span class="o">::</span><span class="n">SplineIntervals</span><span class="w"> </span><span class="n">domain0</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Splider</span><span class="o">::</span><span class="n">SplineIntervals</span><span class="p">(</span><span class="n">u0</span><span class="p">);</span>
-<span class="n">Splider</span><span class="o">::</span><span class="n">SplineIntervals</span><span class="w"> </span><span class="n">domain1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Splider</span><span class="o">::</span><span class="n">SplineIntervals</span><span class="p">(</span><span class="n">u1</span><span class="p">);</span>
-<span class="n">Splider</span><span class="o">::</span><span class="n">BiSplineResampler</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span><span class="w"> </span><span class="n">resampler</span><span class="p">(</span><span class="n">domain0</span><span class="p">,</span><span class="w"> </span><span class="n">domain1</span><span class="p">,</span><span class="w"> </span><span class="n">x</span><span class="p">);</span>
-<span class="k">auto</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">resampler</span><span class="p">(</span><span class="n">v</span><span class="p">);</span>
-</pre></div>
-</div>
-<p><a class="reference external" href="https://github.com/kabasset/Splider">https://github.com/kabasset/Splider</a></p>
-</section>
-</section>
-
-
-          </div>
-          
-        </div>
-      </div>
+  <div class="document">
+    
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
 <h1 class="logo"><a href="index.html">Antoine Basset</a></h1>
@@ -170,8 +78,130 @@ An input 2D grid of knots (<code class="docutils literal notranslate"><span clas
 
         </div>
       </div>
-      <div class="clearer"></div>
-    </div>
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+              <div class="related top">
+                &nbsp;
+  <nav id="rellinks">
+    <ul>
+        <li>
+          &larr;
+          <a href="interests.html" title="Previous document">Interests</a>
+        </li>
+        <li>
+          <a href="resume.html" title="Next document">Resume</a>
+          &rarr;
+        </li>
+    </ul>
+  </nav>
+              </div>
+          
+
+          <div class="body" role="main">
+            
+  <section id="software">
+<h1>Software</h1>
+<a class="reference external image-reference" href="https://github.com/kabasset/Linx"><img alt="Linx" class="align-right" src="https://raw.githubusercontent.com/kabasset/Linx/develop/doc/diagrams/logo_square.svg" width="20%" /></a>
+<section id="linx">
+<h2>Linx</h2>
+<p>Linx is a multidimensional image processing library focused on ease of use and which interfaces seamlessly with the standard C++ library.
+For performance and extensibility, it relies heavily on template metaprogramming.</p>
+<p>Here is a comparison with NumPy.
+Simple array instantiations and operations are performed:</p>
+<div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+<span class="n">f</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">((</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">int</span><span class="p">)</span>
+<span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">default_rng</span><span class="p">()</span><span class="o">.</span><span class="n">random</span><span class="p">((</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+<span class="n">c</span> <span class="o">=</span> <span class="n">b</span> <span class="o">-</span> <span class="n">a</span>
+</pre></div>
+</div>
+<p>Linx:</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="k">auto</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Linx</span><span class="o">::</span><span class="n">Sequence</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span><span class="p">(</span><span class="mi">100</span><span class="p">).</span><span class="n">linspace</span><span class="p">(</span><span class="mi">-1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span>
+<span class="k">auto</span><span class="w"> </span><span class="n">f</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">exp</span><span class="p">(</span><span class="n">x</span><span class="p">);</span>
+<span class="k">auto</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Linx</span><span class="o">::</span><span class="n">Raster</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="p">({</span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">}).</span><span class="n">fill</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+<span class="k">auto</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Linx</span><span class="o">::</span><span class="n">random</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span><span class="p">({</span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">});</span>
+<span class="k">auto</span><span class="w"> </span><span class="n">c</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">a</span><span class="p">;</span>
+</pre></div>
+</div>
+<p><a class="reference external" href="https://github.com/kabasset/Linx">https://github.com/kabasset/Linx</a></p>
+<a class="reference external image-reference" href="https://github.com/CNES/EleFits"><img alt="EleFits" class="align-right" src="https://raw.githubusercontent.com/CNES/EleFits/develop/doc/diagrams/out/elefits_square.svg" width="20%" /></a>
+</section>
+<section id="elefits">
+<h2>EleFits</h2>
+<p>EleFits is a modern C++ package to read and write FITS files which focuses on safety, user-friendliness, and performance.
+At some point, the ND array implementation of EleFits should be droped in favor of Linx.</p>
+<p>Here is a comparison with CFITSIO.
+A single-image FITS file is created from a 2D array (<code class="docutils literal notranslate"><span class="pre">(width,</span> <span class="pre">height)</span> <span class="pre">-&gt;</span> <span class="pre">data</span></code>) and a keyword record (<code class="docutils literal notranslate"><span class="pre">keyword,</span> <span class="pre">value,</span> <span class="pre">comment</span></code>):</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">long</span><span class="w"> </span><span class="n">shape</span><span class="p">[]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">width</span><span class="p">,</span><span class="w"> </span><span class="n">height</span><span class="w"> </span><span class="p">};</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">status</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="n">fitsfile</span><span class="o">*</span><span class="w"> </span><span class="n">fits</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">nullptr</span><span class="p">;</span>
+<span class="n">fits_create_file</span><span class="p">(</span><span class="o">&amp;</span><span class="n">fits</span><span class="p">,</span><span class="w"> </span><span class="n">filename</span><span class="p">.</span><span class="n">c_str</span><span class="p">(),</span><span class="w"> </span><span class="o">&amp;</span><span class="n">status</span><span class="p">);</span>
+<span class="n">fits_create_img</span><span class="p">(</span><span class="n">fits</span><span class="p">,</span><span class="w"> </span><span class="n">SHORT_IMG</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="n">shape</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">status</span><span class="p">);</span>
+<span class="n">fits_write_key</span><span class="p">(</span><span class="n">fits</span><span class="p">,</span><span class="w"> </span><span class="n">TDOUBLE</span><span class="p">,</span><span class="w"> </span><span class="n">name</span><span class="p">.</span><span class="n">c_str</span><span class="p">(),</span><span class="w"> </span><span class="o">&amp;</span><span class="n">value</span><span class="p">,</span><span class="w"> </span><span class="n">comment</span><span class="p">.</span><span class="n">c_str</span><span class="p">(),</span><span class="w"> </span><span class="o">&amp;</span><span class="n">status</span><span class="p">);</span>
+<span class="n">fits_write_img</span><span class="p">(</span><span class="n">fits</span><span class="p">,</span><span class="w"> </span><span class="n">TSHORT</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">width</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">height</span><span class="p">,</span><span class="w"> </span><span class="n">data</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">status</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>EleFits:</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">Fits</span><span class="o">::</span><span class="n">SifFile</span><span class="w"> </span><span class="nf">fits</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span><span class="w"> </span><span class="n">Fits</span><span class="o">::</span><span class="n">FileMode</span><span class="o">::</span><span class="n">CREATE</span><span class="p">);</span>
+<span class="n">fits</span><span class="p">.</span><span class="n">header</span><span class="p">().</span><span class="n">write</span><span class="p">(</span><span class="n">keyword</span><span class="p">,</span><span class="w"> </span><span class="n">value</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">comment</span><span class="p">);</span>
+<span class="n">fits</span><span class="p">.</span><span class="n">raster</span><span class="p">().</span><span class="n">write</span><span class="p">(</span><span class="n">makeRaster</span><span class="p">(</span><span class="n">data</span><span class="p">,</span><span class="w"> </span><span class="n">width</span><span class="p">,</span><span class="w"> </span><span class="n">height</span><span class="p">));</span>
+</pre></div>
+</div>
+<p><a class="reference external" href="https://github.com/CNES/EleFits">https://github.com/CNES/EleFits</a></p>
+<a class="reference external image-reference" href="https://github.com/kabasset/Splider"><img alt="Splider" class="align-right" src="https://raw.githubusercontent.com/kabasset/Splider/develop/doc/diagrams/logo_square.svg" width="20%" /></a>
+</section>
+<section id="splider">
+<h2>Splider</h2>
+<p>Splider is a cubic spline interpolation library where a spline is a list of components (intervals, knots and arguments), which each hold their cache.
+This separation yields huge speed-ups wrt. classical libraries in some cases.</p>
+<p>Here is a comparison with GSL.
+An input 2D grid of knots (<code class="docutils literal notranslate"><span class="pre">(u0,</span> <span class="pre">u1)</span> <span class="pre">-&gt;</span> <span class="pre">v</span></code>) is interpolated along a 2D trajectory (<code class="docutils literal notranslate"><span class="pre">x</span></code>):</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">gsl_interp_accel</span><span class="o">*</span><span class="w"> </span><span class="n">acc0</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">gsl_interp_accel_alloc</span><span class="p">();</span>
+<span class="n">gsl_interp_accel</span><span class="o">*</span><span class="w"> </span><span class="n">acc1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">gsl_interp_accel_alloc</span><span class="p">();</span>
+<span class="n">gsl_spline2d</span><span class="o">*</span><span class="w"> </span><span class="n">spline</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">gsl_spline2d_alloc</span><span class="p">(</span><span class="n">gsl_interp2d_bicubic</span><span class="p">,</span><span class="w"> </span><span class="n">u0</span><span class="p">.</span><span class="n">size</span><span class="p">(),</span><span class="w"> </span><span class="n">u1</span><span class="p">.</span><span class="n">size</span><span class="p">());</span>
+<span class="n">gsl_spline2d_init</span><span class="p">(</span><span class="n">spline</span><span class="p">,</span><span class="w"> </span><span class="n">u0</span><span class="p">.</span><span class="n">data</span><span class="p">(),</span><span class="w"> </span><span class="n">u1</span><span class="p">.</span><span class="n">data</span><span class="p">(),</span><span class="w"> </span><span class="n">v</span><span class="p">.</span><span class="n">data</span><span class="p">(),</span><span class="w"> </span><span class="n">u0</span><span class="p">.</span><span class="n">size</span><span class="p">(),</span><span class="w"> </span><span class="n">u1</span><span class="p">.</span><span class="n">size</span><span class="p">());</span>
+<span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span><span class="w"> </span><span class="n">y</span><span class="p">;</span>
+<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="k">auto</span><span class="o">&amp;</span><span class="w"> </span><span class="n">e</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">y</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">gsl_spline2d_eval</span><span class="p">(</span><span class="n">spline</span><span class="p">,</span><span class="w"> </span><span class="n">e</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="w"> </span><span class="n">e</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span><span class="w"> </span><span class="n">acc0</span><span class="p">,</span><span class="w"> </span><span class="n">acc1</span><span class="p">));</span>
+<span class="p">}</span>
+<span class="n">gsl_spline2d_free</span><span class="p">(</span><span class="n">spline</span><span class="p">);</span>
+<span class="n">gsl_interp_accel_free</span><span class="p">(</span><span class="n">acc0</span><span class="p">);</span>
+<span class="n">gsl_interp_accel_free</span><span class="p">(</span><span class="n">acc1</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>Splider:</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">Splider</span><span class="o">::</span><span class="n">SplineIntervals</span><span class="w"> </span><span class="n">domain0</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Splider</span><span class="o">::</span><span class="n">SplineIntervals</span><span class="p">(</span><span class="n">u0</span><span class="p">);</span>
+<span class="n">Splider</span><span class="o">::</span><span class="n">SplineIntervals</span><span class="w"> </span><span class="n">domain1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Splider</span><span class="o">::</span><span class="n">SplineIntervals</span><span class="p">(</span><span class="n">u1</span><span class="p">);</span>
+<span class="n">Splider</span><span class="o">::</span><span class="n">BiSplineResampler</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span><span class="w"> </span><span class="n">resampler</span><span class="p">(</span><span class="n">domain0</span><span class="p">,</span><span class="w"> </span><span class="n">domain1</span><span class="p">,</span><span class="w"> </span><span class="n">x</span><span class="p">);</span>
+<span class="k">auto</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">resampler</span><span class="p">(</span><span class="n">v</span><span class="p">);</span>
+</pre></div>
+</div>
+<p><a class="reference external" href="https://github.com/kabasset/Splider">https://github.com/kabasset/Splider</a></p>
+</section>
+</section>
+
+
+          </div>
+              <div class="related bottom">
+                &nbsp;
+  <nav id="rellinks">
+    <ul>
+        <li>
+          &larr;
+          <a href="interests.html" title="Previous document">Interests</a>
+        </li>
+        <li>
+          <a href="resume.html" title="Next document">Resume</a>
+          &rarr;
+        </li>
+    </ul>
+  </nav>
+              </div>
+          
+        </div>
+      </div>
+    <div class="clearer"></div>
+  </div>
         
     <div class="footer">
       

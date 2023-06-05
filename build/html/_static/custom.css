@@ -10,3 +10,7 @@ table.docutils th {
 table.docutils td {
     border-bottom: thin dotted;
 }
+
+div.sphinxsidebarwrapper p.logo {
+    text-align: left;
+}
