@@ -6,10 +6,21 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
+from datetime import datetime
+import locale
+
 project = 'Antoine Basset'
 release = '1.0'
 author = 'Antoine Basset'
-copyright = '2023, Antoine Basset'
+language = 'en'
+locale.setlocale(locale.LC_TIME, 'en_US.utf8')
+
+now = datetime.now()
+init_year = 2023
+copyright_years = now.year if now.year == init_year else f'{init_year}-{now.year}'
+copyright = f'{copyright_years}, Antoine Basset'
+# FIXME use html_last_updated_fmt if working
+copyright += f'. Last updated on {now.strftime("%A, %B %d, %Y")}'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
@@ -21,11 +32,9 @@ master_doc = 'index'
 exclude_patterns = ['_build']
 pygments_style = 'sphinx'
 
-
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
-#html_title = 'Antoine Basset'
 html_theme = 'alabaster'
 html_static_path = ['_static']
 html_theme_path = ['_themes']
@@ -36,12 +45,11 @@ html_use_index = False
 html_permalinks = False
 html_copy_source = False
 html_show_sourcelink = False
-html_show_copyright = False
+html_show_copyright = True
 
 html_theme_options = {
-    'fixed_sidebar': True,
+    # 'fixed_sidebar': True,  # Cannot search if window is too small
     'show_relbars': True,
-    # 'logo': 'https://raw.githubusercontent.com/kabasset/Linx/develop/doc/diagrams/logo_notext.png',
 }
 
 # -- Options for BibTeX ------------------------------------------------------
