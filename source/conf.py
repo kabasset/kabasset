@@ -10,7 +10,6 @@ from datetime import datetime
 import locale
 
 project = 'Antoine Basset'
-release = '1.0'
 author = 'Antoine Basset'
 language = 'en'
 locale.setlocale(locale.LC_TIME, 'en_US.utf8')
@@ -36,6 +35,7 @@ pygments_style = 'sphinx'
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
 html_theme = 'alabaster'
+html_title = 'Antoine Basset'
 html_static_path = ['_static']
 html_theme_path = ['_themes']
 html_favicon = 'favicon.png'
