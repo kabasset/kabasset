@@ -116,6 +116,7 @@ Teaching
    ========= ====
    Space missions: Ground segment software
    ==============
+   2023      ISAE Supaero, Toulouse
    2023      CNES, Toulouse
    2022-2023 Hanoi Univeristy, Viet Nam (online)
    ========= ====
