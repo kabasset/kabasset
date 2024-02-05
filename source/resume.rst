@@ -52,6 +52,8 @@ Career
                 * Profiling, optimization, parallelization
    2015-present Project Euclid
    \            * Laureate of the Team Euclid STAR Prize 2021
+                * PSF calibration
+                * Operations
                 * System testing and tools development
                 * Science pipelines integration
                 * Software development (C++, Python)
@@ -111,45 +113,57 @@ Teaching
 
 .. table::
    :width: 100%
-   :widths: 20 80
+   :widths: 20 30 50
 
-   ========= ====
-   Space missions: Ground segment software
-   ==============
-   2023      ISAE Supaero, Toulouse
-   2023      CNES, Toulouse
-   2022-2023 Hanoi Univeristy, Viet Nam (online)
-   ========= ====
-
-.. table::
-   :width: 100%
-   :widths: 20 80
-
-   ==== ====
-   Microscopy: Spot detection and tracking in videos
-   =========
-   2013 Université Paris Diderot (tutorial)
-   ==== ====
+   ========= ================ ====
+   Space missions: Ground segment
+   ===============================
+   2024      ISAE Supaero     Mission segment
+   2023      CNES             Software
+   2022-2023 Hanoi Univeristy Software (remotely)
+   ========= ================ ====
 
 .. table::
    :width: 100%
-   :widths: 20 80
+   :widths: 20 30 50
 
-   ==== ====
+   ==== ============ ====
+   CPU architecture
+   ======================
+   2024 CNES         Concepts and impact on performance
+   2022 Mêlée Euclid Concepts and impact on performance
+   ==== ============ ====
+
+.. table::
+   :width: 100%
+   :widths: 20 30 50
+
+   ==== ===== ====
    C++
-   =========
-   2011 ENSAI, Bruz (tutorial)
-   ==== ====
+   ===============
+   2024 CNES  Metaprogramming
+   2011 ENSAI Basics (tutorial)
+   ==== ===== ====
 
 .. table::
    :width: 100%
-   :widths: 20 80
+   :widths: 20 30 50
 
-   ==== ====
+   ==== ===== ====
    LaTeX
-   =========
-   2011 ENSAI, Bruz (tutorial)
-   ==== ====
+   ===============
+   2011 ENSAI Basics (tutorial)
+   ==== ===== ====
+
+.. table::
+   :width: 100%
+   :widths: 20 30 50
+
+   ==== ================== ====
+   Microscopy image processing
+   ============================
+   2013 Université Paris 7 Spot detection and tracking in videos
+   ==== ================== ====
 
 Supervision
 -----------
@@ -159,7 +173,7 @@ Supervision
    :widths: 20 80
 
    ========= ====
-   Postdocs
+   Postdoc
    ==============
    2015-2017 Tristan Grégoire (3 years, co-supervisor)
    \         * Astronomical catalog IO library
@@ -170,9 +184,26 @@ Supervision
    :width: 100%
    :widths: 20 80
 
+   ========= ====
+   PhD student
+   ==============
+   2024-2027 ??? (co-supervisor)
+   \         * Bayesian inference
+             * Artificial intelligence
+             * Software development (C++/Python, GPU)
+   ========= ====
+
+.. table::
+   :width: 100%
+   :widths: 20 80
+
    ==== ====
    Engineering internships
    =========
+   2024 Tanguy Delmond, ENSEEIHT (6 months)
+   \    * Bayesian inference
+        * Source detection
+        * Software development (Python)
    2023 Edgar Remi, ENSEEIHT (6 months)
    \    * Data compression benchmarking
         * Software development (C++)
@@ -257,11 +288,10 @@ Other Projects
    Graphism
    ==============
    2009-2023 Drawing of various logos
-   \         * Linx (software)
-             * EleFits (software)
+   \         * Various software (see :doc:`software`)
              * AirExpo 2011-2019 (airshow)
              * Simeria (music band)
-             * BudStar (CanSat team)
+             * BudStar (CanSat team, see :doc:`interests`)
              * Kastor (association)
    ========= ====
 
@@ -270,7 +300,7 @@ Other Projects
    :widths: 20 80
 
    ========= ====
-   CanSat
+   CanSat (see :doc:`interests`)
    ==============
    2009-2012 Can-sized probe lanched from a balloon or mini-rocket
    \         * Laureate of the ISAE Prize 2012
