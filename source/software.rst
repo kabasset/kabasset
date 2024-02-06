@@ -85,30 +85,26 @@ Splider
 Splider is a cubic spline interpolation library where a spline is a list of components (intervals, knots and arguments), which each hold their cache.
 This separation yields huge speed-ups wrt. classical libraries in some cases.
 
-Here is a comparison with GSL.
-An input 2D grid of knots (``(u0, u1) -> v``) is interpolated along a 2D trajectory (``x``):
+Here is a comparison with GSL, where an input set of knots (``u -> v``) is interpolated at a set of positions (``x``):
 
 .. code-block:: cpp
 
-   gsl_interp_accel* acc0 = gsl_interp_accel_alloc();
-   gsl_interp_accel* acc1 = gsl_interp_accel_alloc();
-   gsl_spline2d* spline = gsl_spline2d_alloc(gsl_interp2d_bicubic, u0.size(), u1.size());
-   gsl_spline2d_init(spline, u0.data(), u1.data(), v.data(), u0.size(), u1.size());
+   gsl_interp_accel* acc = gsl_interp_accel_alloc();
+   gsl_spline* spline = gsl_spline_alloc(gsl_interp_cspline, u.size());
+   gsl_spline_init(spline, u.data(), v.data(), u.size());
    std::vector<double> y;
    for (const auto& e : x) {
-     y.push_back(gsl_spline2d_eval(spline, e[0], e[1], acc0, acc1));
+      y.push_back(gsl_spline_eval(spline, e, acc));
    }
-   gsl_spline2d_free(spline);
-   gsl_interp_accel_free(acc0);
-   gsl_interp_accel_free(acc1);
+   gsl_interp_accel_free(acc);
+   gsl_spline_free(spline);
 
 Splider:
 
 .. code-block:: cpp
 
-   Splider::SplineIntervals domain0 = Splider::SplineIntervals(u0);
-   Splider::SplineIntervals domain1 = Splider::SplineIntervals(u1);
-   Splider::BiSplineResampler<double> resampler(domain0, domain1, x);
-   auto y = resampler(v);
+   const auto build = Spline::builder(u);
+   auto spline = build.spline(v);
+   auto y = spline(x);
 
 https://github.com/kabasset/Splider
