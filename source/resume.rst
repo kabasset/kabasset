@@ -139,20 +139,11 @@ Teaching
    :widths: 20 30 50
 
    ==== ===== ====
-   C++
+   Languages
    ===============
-   2024 CNES  Metaprogramming
-   2011 ENSAI Basics (tutorial)
-   ==== ===== ====
-
-.. table::
-   :width: 100%
-   :widths: 20 30 50
-
-   ==== ===== ====
-   LaTeX
-   ===============
-   2011 ENSAI Basics (tutorial)
+   2024 CNES  C++ metaprogramming
+   2011 ENSAI C++ basics (tutorial)
+   2011 ENSAI LaTeX basics (tutorial)
    ==== ===== ====
 
 .. table::
