@@ -4,7 +4,7 @@ Interests
 Software Efficiency
 -------------------
 
-My main focus in sorfware development is on profiling, optimization and parallelization,
+My main focus in software development is on profiling, optimization and parallelization,
 aiming at better *efficiency*.
 
 Ambitious space missions rely more and more on Big Data processing, not to speak about multi-mission and multi-messenger studies.
@@ -26,6 +26,23 @@ This is what I term *efficiency*.
 Put another way, performance-oriented design aims at delivering a given result as fast as possible with unlimited resources,
 while efficiency-oriented design aims at delivering as many results as possible in a given (longer) time with limited resources.
 Efficiency is a key factor for both better performance and greener IT, and is fundamental in the frame of Big Data systems.
+
+Elegant APIs
+------------
+
+C++ is known to be a verbose language full of boilerplate.
+Modern C++, i.e. since 2011, enables metaprogramming, and should be seen as a brand new language.
+It changes the way software is designed, e.g. thanks to mixins and compile-time computation,
+and the way interfaces are designed, e.g. through parameter forwarding and duck typing.
+Among others, briliant examples of such elegant APIs include the C++20 ranges library, Eigen or  Niels Lohmann's Json library.
+
+All in all, Modern C++ gives an opportunity to write more performant sorfware with simpler interfaces.
+This is also true for more recent languages like Rust, which simplify the library development wrt. C++.
+
+As a developer of several C++ libraries, I like to deliver APIs which yield readable user code.
+Although the underlying design is generally complex, the user-level interfaces must feel natural.
+A few examples are displayed in :doc:`software`, many more are available in my libraries documentations.
+
 
 Events Detection and Estimation
 -------------------------------
