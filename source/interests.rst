@@ -36,7 +36,7 @@ It changes the way software is designed, e.g. thanks to mixins and compile-time 
 and the way interfaces are designed, e.g. through parameter forwarding and duck typing.
 Among others, briliant examples of such elegant APIs include the C++20 ranges library, Eigen or  Niels Lohmann's Json library.
 
-All in all, Modern C++ gives an opportunity to write more performant sorfware with simpler interfaces.
+All in all, Modern C++ gives an opportunity to write more performant software with simpler interfaces.
 This is also true for more recent languages like Rust, which simplify the library development wrt. C++.
 
 As a developer of several C++ libraries, I like to deliver APIs which yield readable user code.
