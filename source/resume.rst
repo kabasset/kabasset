@@ -115,13 +115,13 @@ Teaching
    :width: 100%
    :widths: 20 30 50
 
-   ========= ================ ====
+   ========= ============ ====
    Space missions: Ground segment
-   ===============================
-   2024      ISAE Supaero     Mission segment
-   2023      CNES             Software
-   2022-2023 Hanoi Univeristy Software (remotely)
-   ========= ================ ====
+   ===========================
+   2024      ISAE Supaero The mission segment (1h30)
+   2023      CNES         The Euclid science ground segment (1h30)
+   2022-2023 Hanoi Uni.   Ground segment software (2h, remotely)
+   ========= ============ ====
 
 .. table::
    :width: 100%
@@ -130,8 +130,8 @@ Teaching
    ==== ============ ====
    CPU architecture
    ======================
-   2024 CNES         Concepts and impact on performance
-   2022 Mêlée Euclid Concepts and impact on performance
+   2024 CNES         Concepts, profiling, optimization (1h)
+   2022 Mêlée Euclid Concepts, profiling, optimization (1h)
    ==== ============ ====
 
 .. table::
@@ -141,9 +141,9 @@ Teaching
    ==== ===== ====
    Languages
    ===============
-   2024 CNES  C++ metaprogramming
-   2011 ENSAI C++ basics (tutorial)
-   2011 ENSAI LaTeX basics (tutorial)
+   2024 CNES  Metaprogramming with C++ (1h)
+   2011 ENSAI Object oriented programming with C++ (6h tutorial)
+   2011 ENSAI Initiation to LaTeX (6h tutorial)
    ==== ===== ====
 
 .. table::
@@ -153,7 +153,8 @@ Teaching
    ==== ================== ====
    Microscopy image processing
    ============================
-   2013 Université Paris 7 Spot detection and tracking in videos
+   2013 CNRS, Uni. Paris 7 Spot detection (1h tutorial)
+   2013 CNRS, Uni. Paris 7 Spot tracking (1h tutorial)
    ==== ================== ====
 
 Supervision
