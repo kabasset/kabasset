@@ -223,6 +223,49 @@ Supervision
         * Bayesian image processing
    ==== ====
 
+Outreach
+--------
+
+.. table::
+   :width: 100%
+   :widths: 20 80
+
+   ==== ====
+   Shedding light on our Dark Universe: Euclid, Lisa
+   =========
+   2024 INSA Toulouse
+   ==== ====
+
+.. table::
+   :width: 100%
+   :widths: 20 80
+
+   ==== ====
+   The Euclid mission, from the ground segment point of view
+   =========
+   2023 Paris Air Show, Le Bourget
+   ==== ====
+
+.. table::
+   :width: 100%
+   :widths: 20 80
+
+   ==== ====
+   From CanSats to CubeSats and satellite constellations
+   =========
+   2011 Toulouse Science festival
+   ==== ====
+
+.. table::
+   :width: 100%
+   :widths: 20 80
+
+   ==== ====
+   The CanSat student project
+   =========
+   2010 Toulouse Space Show
+   ==== ====
+
 Education
 ---------
 
