@@ -1,57 +1,71 @@
 Interests
 =========
 
-Software Efficiency
--------------------
+Astronomy
+---------
 
-My main focus in software development is on profiling, optimization and parallelization,
-aiming at better *efficiency*.
+.. image:: https://upload.wikimedia.org/wikipedia/commons/4/42/Grosse.Konjunktion.P1080051.jpg
+   :width: 30%
+   :align: right
 
-Ambitious space missions rely more and more on Big Data processing, not to speak about multi-mission and multi-messenger studies.
-In parallel, computing center resources are growing fast and open the door to greedy algorithms like AI and MCMC.
-More data and more intensive methods means *much* more computation.
+I grew up as a star gazer and will never forget the first time I saw Saturn or the moons of Jupiter through a telescope.
+I cannot recall a time when I didn't dream of galaxies.
+Although they are not strictly speaking my daily work, astronomy and physics have always been part of my daily life,
+and cosmology is my prime interest.
 
-At the same time, increasing energy costs and climate change advocate for a more frugal information technology, among others.
-Greener infrastructures are being studied and implemented already, but they represent a small part of the mission-level processing budget.
+We live in an era in which we've never had access to so many and so spectacularly precise data,
+but never before has the scientific community been so aware of the gigantic amount of unknowns and inconsistencies!
+According to the "standard" model (Λ-CDM), all we are able to see amounts to 5% of the universe contents...
 
-Developers generally measure computational *performance* by profiling well-known metrics like CPU time, RAM usage or IO waits.
-Recent and future Big Data space missions like Swot, Euclid or Lisa involve huge ground segments
-built on numerous and large computing centers, where hundreds of pipelines, possibly made of thousands of jobs each, are run daily.
-In these cases, the individual wall time or memory consumption of a job has a very limited impact on the overall performance.
+Working for major astronomy projects like Euclid or Lisa and seeing the enormous chasm between observations and theories is both scary and fascinating to me.
+For sure, we live in one of the most exciting centuries to care about cosmology!
 
-By contrast, metrics related to adaptability, scalability or CPU caching are directly related to the information throughput and infrastructure sizing,
-which are the actual two top-level points of interest.
-These metrics have in common that they relate to a ratio between the resources effectively used and the provided resources.
-This is what I term *efficiency*.
-Put another way, performance-oriented design aims at delivering a given result as fast as possible with unlimited resources,
-while efficiency-oriented design aims at delivering as many results as possible in a given (longer) time with limited resources.
-Efficiency is a key factor for both better performance and greener IT, and is fundamental in the frame of Big Data systems.
+Software Development
+--------------------
+
+.. image:: https://raw.githubusercontent.com/kabasset/Linx/develop/doc/diagrams/looping_benchmark_summary.svg
+   :width: 30%
+   :align: right
+
+As a programmer for space missions Euclid and Lisa, I develop signal processing libraries in modern C++.
+My main activies in software development relate to profiling, optimization and parallelization, aiming at better efficiency.
+When developing libraries, I always focus on the user experience.
+
+`Efficiency <https://youtu.be/apJMu_CHz4A?feature=shared>`_
+   Programmers generally measure computational *performance* by profiling well-known metrics like CPU time, RAM usage or IO waits.
+   By contrast, metrics related to adaptability, scalability or CPU caching are directly related to the information throughput and infrastructure sizing,
+   which are the actual two top-level points of interest.
+   These metrics have in common that they relate to a ratio between the resources effectively used and the provided resources.
+   This is what I term *efficiency*.
+   Put another way, performance-oriented design aims at delivering a given result as fast as possible with unlimited resources,
+   while efficiency-oriented design aims at delivering as many results as possible in a given (longer) time with limited resources.
+   Efficiency is a key factor for both better performance and greener IT, and is fundamental in the frame of Big Data systems.
 
 Elegant APIs
+   C++ is known to be a verbose language full of boilerplate.
+   Modern C++, i.e. since 2011, enables metaprogramming, and should be seen as a brand new language.
+   It changes the way software is designed, e.g. thanks to mixins and compile-time computation,
+   and the way interfaces are designed, e.g. through parameter forwarding and duck typing.
+   Among others, briliant examples of such elegant APIs include the C++20 ranges library, Eigen or  Niels Lohmann's Json library.
+   All in all, Modern C++ gives an opportunity to write more performant software with simpler interfaces.
+   This is also true for more recent languages like Rust, which simplify the library development wrt. C++.
+   As a developer of several C++ libraries, I like to deliver APIs which yield readable user code.
+   Although the underlying design is generally complex, the user-level interfaces must feel natural.
+   A few examples are displayed in :doc:`software`, many more are available in my libraries documentations.
+
+
+Cell Biology
 ------------
 
-C++ is known to be a verbose language full of boilerplate.
-Modern C++, i.e. since 2011, enables metaprogramming, and should be seen as a brand new language.
-It changes the way software is designed, e.g. thanks to mixins and compile-time computation,
-and the way interfaces are designed, e.g. through parameter forwarding and duck typing.
-Among others, briliant examples of such elegant APIs include the C++20 ranges library, Eigen or  Niels Lohmann's Json library.
+.. image:: _static/cell_diffusion.gif
+   :align: right
 
-All in all, Modern C++ gives an opportunity to write more performant software with simpler interfaces.
-This is also true for more recent languages like Rust, which simplify the library development wrt. C++.
-
-As a developer of several C++ libraries, I like to deliver APIs which yield readable user code.
-Although the underlying design is generally complex, the user-level interfaces must feel natural.
-A few examples are displayed in :doc:`software`, many more are available in my libraries documentations.
-
-
-Events Detection and Estimation
--------------------------------
-
-As a PhD student with Inria (team Serpico), I have worked on the detection and estimation of dynamic events in image sequences.
-I focused on fluorescence microscopy image sequences and videos of crowded scenes.
+As a `PhD student <https://theses.hal.science/tel-01304780/preview/BASSET_Antoine.pdf>`_ with Inria (team Serpico),
+I have worked on the detection and estimation of dynamic events in image sequences.
+I focused on fluorescence microscopy image sequences.
 
 Spot Detection
-   To quantitatively analyze dynamic phenomena such as the aforementioned membrane dynamics,
+   To quantitatively analyze dynamic phenomena such as cell membrane dynamics,
    subcellular particles of interest have to be accurately detected.
    In 2014, we proposed ATLAS, a method enabling the segmentation of vesicles in fluorescence microscopy images.
    The segmentation stage amounts to thresholding the Laplacian of Gaussian (LoG) of the image.
@@ -64,19 +78,19 @@ Membrane Dynamics
    and then estimate the associated dynamics in image sequences of total internal reflection fluorescence microscopy (TIRFM).
    Various dynamic models (including translation, diffusion and dissociation) are tested to classify the dynamics of each detected event.
 
-Crowd Motion Analysis
-   Assessing crowd behaviors from videos is a difficult task while of interest in many applications.
-   We have defined a novel approach, which identifies, from two successive frames only, crowd behaviors expressed by simple image motion patterns.
-   It relies on the estimation of a collection of sub-affine motion models in the image,
-   a local motion classification based on a penalized likelihood criterion, and a regularization stage involving inhibition and reinforcement factors.
-   Relying on this motion descriptor, we have also developed an original and simple method for recovering the dominant paths followed by people in the observed scene.
-   We are now working on the on-line detection and localization of abnormal behaviors in videos of crowded scenes.
-
 CanSat
 ------
 
+.. image:: _static/morpheus_test_0.jpg
+.. image:: _static/morpheus_test_1.jpg
+.. image:: _static/morpheus_test_2.jpg
+
 During my engineering school years, I have developed, built and flown a dozen CanSats in various competitions,
 as the lead of ISAE's team, BudStar.
+
+.. image:: _static/morpheus_open.jpg
+   :align: right
+   :width: 30%
 
 A CanSat is can-sized drone, which is fully autonomous and completes scientific missions.
 The CanSat is launched from a rocket or captive balloon at a height of a few hundred to a few thousand feet.
@@ -115,6 +129,10 @@ Here is a brief overview of the team background.
 
 Basset
 ------
+
+.. image:: https://upload.wikimedia.org/wikipedia/commons/6/6a/Basset_Hound_Dog_%28PSF%29.png
+   :width: 30%
+   :align: right
 
 Bassets are sausage-shaped dogs with oversized dangling leathers
 -- not to be confused with the proud and tufted ears of the lynx.

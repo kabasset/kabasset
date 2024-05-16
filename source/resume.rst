@@ -9,7 +9,7 @@ Degrees
    :widths: 20 80
 
    ==== ====
-   PhD in Signal and Image Processing
+   PhD in Signal Processing
    =========
    2015 Université Rennes I
    ==== ====
@@ -32,6 +32,24 @@ Degrees
    Master 2 Research in Artificial Intelligence
    =========
    2012 Université Toulouse III
+   ==== ====
+
+.. table::
+   :width: 100%
+   :widths: 20 80
+
+   ==== ====
+   Awards
+   =========
+   2024 Space Foundation's `Space Achievement Award <https://www.esa.int/ESA_Multimedia/Images/2024/04/Euclid_mission_team_honoured_with_Space_Foundation_Award>`_
+        (team prize to the whole Euclid mission team)
+   2021 `Euclid Builder <https://www.euclid-ec.org/consortium/builders/>`_
+   2021 Euclid `STAR Prize <https://www.euclid-ec.org/consortium/star-prize/stars2021/>`_
+        (team prize to the French science ground segment core team)
+   2012 ISAE Prize
+   2011 Winner of the Open CanSat Competition in France
+   2010 Winner of the International CanSat Competition in Spain
+   2009 Winner of the Open CanSat Competition in France
    ==== ====
 
 
@@ -225,6 +243,16 @@ Supervision
 
 Outreach
 --------
+
+.. table::
+   :width: 100%
+   :widths: 20 80
+
+   ==== ====
+   The universe measures 1000
+   =========
+   2024 TEDx INSA Toulouse
+   ==== ====
 
 .. table::
    :width: 100%
