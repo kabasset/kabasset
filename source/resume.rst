@@ -304,6 +304,7 @@ Education
    ==== ====
    Courses with CNES
    =========
+   2024 Image Quality
    2021 Techniques and Technologies for Space Vehicles
    2018 Astronomy (by IRAP, Fleurance)
    2017 Advanced Python (by iForm, Toulouse)
