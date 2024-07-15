@@ -11,7 +11,8 @@ Degrees
    ==== ====
    PhD in Signal Processing
    =========
-   2015 Université Rennes I
+   2015 | Université Rennes I
+        | `(Thesis in PDF) <https://ged.univ-rennes1.fr/nuxeo/site/esupversions/cb217ed5-bb4f-4ce9-8cc7-f846b7398e50?inline>`_
    ==== ====
 
 .. table::
@@ -21,7 +22,7 @@ Degrees
    ==== ====
    Aeronautical Engineering Degree
    =========
-   2012 ISAE, Toulouse
+   2012 `ISAE <https://www.isae-supaero.fr/en/>`_, Toulouse
    ==== ====
 
 .. table::
@@ -41,11 +42,11 @@ Degrees
    ==== ====
    Awards
    =========
-   2024 Space Foundation's `Space Achievement Award <https://www.esa.int/ESA_Multimedia/Images/2024/04/Euclid_mission_team_honoured_with_Space_Foundation_Award>`_
-        (team prize to the whole Euclid mission team)
+   2024 | Space Foundation's `Space Achievement Award <https://www.esa.int/ESA_Multimedia/Images/2024/04/Euclid_mission_team_honoured_with_Space_Foundation_Award>`_
+        | (team prize to the whole Euclid mission team)
    2021 `Euclid Builder <https://www.euclid-ec.org/consortium/builders/>`_
-   2021 Euclid `STAR Prize <https://www.euclid-ec.org/consortium/star-prize/stars2021/>`_
-        (team prize to the French science ground segment core team)
+   2021 | Euclid `STAR Prize <https://www.euclid-ec.org/consortium/star-prize/stars2021/>`_
+        | (team prize to the French science ground segment core team)
    2012 ISAE Prize
    2011 Winner of the Open CanSat Competition in France
    2010 Winner of the International CanSat Competition in Spain
@@ -63,12 +64,12 @@ Career
    ============ ====
    Engineer with CNES, Toulouse
    =================
-   2022-present Project Lisa
+   2022-present Project `Lisa <https://www.esa.int/Science_Exploration/Space_Science/LISA>`_
    \            * System architecture
                 * Signal processing
-                * Software development (C++, Python)
+                * Software development (C++, Python, GPU)
                 * Profiling, optimization, parallelization
-   2015-present Project Euclid
+   2015-present Project `Euclid <https://www.esa.int/Science_Exploration/Space_Science/Euclid>`_
    \            * Laureate of the Team Euclid STAR Prize 2021
                 * PSF calibration
                 * Operations
@@ -133,13 +134,14 @@ Teaching
    :width: 100%
    :widths: 20 30 50
 
-   ========= ============ ====
+   ========= ============================ ====
    Space missions: Ground segment
-   ===========================
-   2024      ISAE Supaero The mission segment (1h30)
-   2023      CNES         The Euclid science ground segment (1h30)
-   2022-2023 Hanoi Uni.   Ground segment software (2h, remotely)
-   ========= ============ ====
+   ===========================================
+   2024      CNES-Education summer school Measuring distances with Euclid (1h15)
+   2024      ISAE-SUPAERO                 The mission segment (1h30)
+   2023      CNES                         The Euclid science ground segment (1h30)
+   2022-2023 Hanoi Uni.                   Ground segment software (2x 2h, remotely)
+   ========= ============================ ====
 
 .. table::
    :width: 100%
@@ -197,7 +199,7 @@ Supervision
    ========= ====
    PhD student
    ==============
-   2024-2027 ??? (co-supervisor)
+   2024-2027 Tanguy Delmond (co-supervisor)
    \         * Bayesian inference
              * Artificial intelligence
              * Software development (C++/Python, GPU)
@@ -304,8 +306,10 @@ Education
    ==== ====
    Courses with CNES
    =========
+   2024 Astronomy (by IRAP, Pic du Midi Observatory)
+   2024 `MaNiTou summer school on gravitational waves <https://indico.in2p3.fr/event/31714/>`_ (by L2IT)
    2024 Image Quality
-   2021 Techniques and Technologies for Space Vehicles
+   2021 `Techniques and Technologies for Space Vehicles <https://advanced.techinspace.fr/en/>`_
    2018 Astronomy (by IRAP, Fleurance)
    2017 Advanced Python (by iForm, Toulouse)
    ==== ====
@@ -337,8 +341,8 @@ Education
    ========= ====
    Aerospace engineering with ISAE, Toulouse
    ==============
-   2011-2012 SUPAERO
-   2008-2010 ENSICA
+   2011-2012 ISAE-SUPAERO
+   2008-2010 ISAE-ENSICA
    ========= ====
 
 Other Projects
@@ -353,7 +357,7 @@ Other Projects
    ==============
    2009-2023 Drawing of various logos
    \         * Various software (see :doc:`software`)
-             * AirExpo 2011-2019 (airshow)
+             * `AirExpo <http://airexpo.org/>`_ 2011-2019 (airshow)
              * Simeria (music band)
              * BudStar (CanSat team, see :doc:`interests`)
              * Kastor (association)
