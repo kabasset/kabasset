@@ -251,7 +251,7 @@ Outreach
    :widths: 20 80
 
    ==== ====
-   The universe measures 1000
+   `The universe measures 1000 <https://www.youtube.com/watch?v=S_MS6loQQwo>`_
    =========
    2024 TEDx INSA Toulouse
    ==== ====
@@ -312,6 +312,7 @@ Education
    2021 `Techniques and Technologies for Space Vehicles <https://advanced.techinspace.fr/en/>`_
    2018 Astronomy (by IRAP, Fleurance)
    2017 Advanced Python (by iForm, Toulouse)
+   2016 `Rodolphe Clédassou Euclid summer school <https://ecole-euclid.cnrs.fr/>`_
    ==== ====
 
 .. table::
@@ -331,6 +332,8 @@ Education
    ========= ====
    Master 2 Research at Université Toulouse III
    ==============
+   2024      Astrophysics, Space Sciences and Planetology (as auditor)
+   \         * General Relativity (20-hour module)
    2011-2012 Artificial Intelligence
    ========= ====
 
@@ -347,6 +350,9 @@ Education
 
 Other Projects
 --------------
+
+.. image:: _static/various_logos.jpg
+   :width: 100%
 
 .. table::
    :width: 100%
