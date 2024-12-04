@@ -4,14 +4,14 @@ Interests
 Astronomy
 ---------
 
-.. image:: https://upload.wikimedia.org/wikipedia/commons/4/42/Grosse.Konjunktion.P1080051.jpg
-   :width: 30%
+.. image:: _static/M42_small.jpg
+   :width: 40%
    :align: right
 
 I grew up as a star gazer and will never forget the first time I saw Saturn or the moons of Jupiter through a telescope.
 I cannot recall a time when I didn't dream of galaxies.
-Although they are not strictly speaking my daily work, astronomy and physics have always been part of my daily life,
-and cosmology is my prime interest.
+`Although they are not strictly speaking my daily work, astronomy and physics have always been part of my daily life,
+and cosmology is my prime interest. <https://www.youtube.com/watch?v=S_MS6loQQwo>`_
 
 We live in an era in which we've never had access to so many and so spectacularly precise data,
 but never before has the scientific community been so aware of the gigantic amount of unknowns and inconsistencies!
@@ -23,7 +23,7 @@ For sure, we live in one of the most exciting centuries to care about cosmology!
 Software Development
 --------------------
 
-.. image:: https://raw.githubusercontent.com/kabasset/Linx/develop/doc/diagrams/looping_benchmark_summary.svg
+.. image:: https://raw.githubusercontent.com/kabasset/IssoireLinx/develop/doc/diagrams/looping_benchmark_summary.svg
    :width: 30%
    :align: right
 
@@ -41,7 +41,7 @@ When developing libraries, I always focus on the user experience.
    while efficiency-oriented design aims at delivering as many results as possible in a given (longer) time with limited resources.
    Efficiency is a key factor for both better performance and greener IT, and is fundamental in the frame of Big Data systems.
 
-Elegant APIs
+`Elegant APIs <https://cnes.github.io/EleFits/5.3.1/index.html>`_
    C++ is known to be a verbose language full of boilerplate.
    Modern C++, i.e. since 2011, enables metaprogramming, and should be seen as a brand new language.
    It changes the way software is designed, e.g. thanks to mixins and compile-time computation,
@@ -74,7 +74,7 @@ Spot Detection
 
 Membrane Dynamics
    Assessing the dynamics of plasma membrane events in live cell fluorescence microscopy is of paramount interest to understand cell mechanisms.
-   In collaboration with UMR144, we develop methods to detect vesicle fusion events,
+   In collaboration with UMR144, we have developed methods to detect vesicle fusion events,
    and then estimate the associated dynamics in image sequences of total internal reflection fluorescence microscopy (TIRFM).
    Various dynamic models (including translation, diffusion and dissociation) are tested to classify the dynamics of each detected event.
 
@@ -86,7 +86,7 @@ CanSat
 .. image:: _static/morpheus_test_2.jpg
 
 During my engineering school years, I have developed, built and flown a dozen CanSats in various competitions,
-as the lead of ISAE's team, BudStar.
+generally as the leader and software developer of ISAE's team, BudStar.
 
 .. image:: _static/morpheus_open.jpg
    :align: right

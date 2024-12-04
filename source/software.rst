@@ -1,6 +1,47 @@
 Software
 ========
 
+.. image:: https://www.esa.int/var/esa/storage/images/science_exploration/space_science/euclid/24495561-6-eng-GB/Euclid_pillars.png
+   :alt: Linx
+   :width: 20%
+   :align: right
+   :target: https://www.esa.int/Science_Exploration/Space_Science/Euclid
+
+Euclid
+------
+
+As a member of the Euclid Science Ground Segment development group, I have been developping software for eight years.
+To my knowledge, I have contributed to all of the Euclid Processing Functions but MER.
+Here is a summary of my main contributions.
+
+LE1-VIS
+   The Level 1 pipeline (LE1) transforms the raw Euclid telemetry into data products usable by downstream pipelines: images and metadata.
+   In other words, every Euclid image ever published or processed has been produced by LE1,
+   including `Early Realease Observations <https://www.esa.int/Science_Exploration/Space_Science/Euclid/Euclid_s_first_images_the_dazzling_edge_of_darkness>`_
+   and `the 208-Gigapixel glimpse <https://www.youtube.com/watch?v=86ZCsUfgLRQ>`_.
+   I have implemented the storage class for the telemetry of the VIS instrument and worked on the overall design.
+   After more than a year of operations, and more than 70,000 images produced, not a single bug has been found!
+
+SIM
+   As the name implies, the simulation pipeline (SIM) generates simulated images for the Euclid mission.
+   It includes simulators of Euclid instruments VIS and NISP, as well as the external surveys used by Euclid.
+   My main contribution in terms of software development is the test data management tool,
+   which connects on-the-fly to computing centers to feed unit tests with distributed data sets.
+   It has been integrated into `Elements <https://github.com/astrorama/Elements>`_.
+
+SIR, SPE
+   The near-infrared spectroscopy pipeline (SIR) extract galaxy spectra from the spectro-images of Euclid,
+   and then the redshifts are estimated by the spectral features pipeline (SPE).
+   I have designed the FITS-based interface between SIR and SPE, and implemented EL_SpectrumLib, the associated I/O library.
+
+SHE
+   In order to map dark matter using week-lensing, the shear pipeline (SHE) estimates shape parameters of galaxies.
+   It relies on a modelling of the telescope and VIS instrument (the PSF model) with unprecedented precision.
+   CNES delivers one of the calibration pipelines which estimate the PSF model.
+   I have focused on the computational performance optimization, integration and automation of this pipeline.
+
+|
+
 .. image:: https://raw.githubusercontent.com/kabasset/Linx/develop/doc/diagrams/logo_square.svg
    :alt: Linx
    :width: 20%
@@ -10,8 +51,8 @@ Software
 Linx
 ----
 
-Linx is a multidimensional image processing library focused on ease of use and which interfaces seamlessly with the standard C++ library.
-For performance and extensibility, it relies heavily on template metaprogramming.
+Linx is a C++ multidimensional image processing library focused on ease of use and performance protability.
+Image processing pipelines written with Linx can run on a variety of infrastructures, including HTC, HPC and GPU farms.
 
 Here is a comparison with NumPy.
 Simple array instantiations and operations are performed:
@@ -36,6 +77,7 @@ Linx:
 
 https://github.com/kabasset/Linx
 
+|
 
 .. image:: https://raw.githubusercontent.com/CNES/EleFits/develop/doc/diagrams/out/elefits_square.svg
    :alt: EleFits
@@ -72,6 +114,7 @@ EleFits:
 
 https://github.com/CNES/EleFits
 
+|
 
 .. image:: https://raw.githubusercontent.com/kabasset/Splider/develop/doc/diagrams/logo_square.svg
    :alt: Splider
