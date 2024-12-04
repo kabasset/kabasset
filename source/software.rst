@@ -1,7 +1,7 @@
 Software
 ========
 
-|empty|
+|clear-float|
 
 .. image:: https://www.esa.int/var/esa/storage/images/science_exploration/space_science/euclid/24495561-6-eng-GB/Euclid_pillars.png
    :alt: Linx
@@ -42,7 +42,7 @@ SHE
    CNES delivers one of the calibration pipelines which estimate the PSF model.
    I have focused on the computational performance optimization, integration and automation of this pipeline.
 
-|empty|
+|clear-float|
 
 .. image:: https://raw.githubusercontent.com/kabasset/Linx/develop/doc/diagrams/logo_square.svg
    :alt: Linx
@@ -79,7 +79,7 @@ Linx:
 
 https://github.com/kabasset/Linx
 
-|empty|
+|clear-float|
 
 .. image:: https://raw.githubusercontent.com/CNES/EleFits/develop/doc/diagrams/out/elefits_square.svg
    :alt: EleFits
@@ -116,7 +116,7 @@ EleFits:
 
 https://github.com/CNES/EleFits
 
-|empty|
+|clear-float|
 
 .. image:: https://raw.githubusercontent.com/kabasset/Splider/develop/doc/diagrams/logo_square.svg
    :alt: Splider
@@ -154,6 +154,6 @@ Splider:
 
 https://github.com/kabasset/Splider
 
-.. |empty| raw:: html
+.. |clear-float| raw:: html
 
-   <div style="line-height: 0; padding: 0; margin: 0"></div>
+   <div style="clear: both"></div>
