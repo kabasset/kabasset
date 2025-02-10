@@ -351,7 +351,7 @@ Education
 Other Projects
 --------------
 
-.. image:: _static/various_logos.jpg
+.. image:: _static/logos.png
    :width: 100%
 
 .. table::

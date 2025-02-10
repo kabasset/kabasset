@@ -22,7 +22,7 @@ LE1-VIS
    including `Early Realease Observations <https://www.esa.int/Science_Exploration/Space_Science/Euclid/Euclid_s_first_images_the_dazzling_edge_of_darkness>`_
    and `the 208-Gigapixel glimpse <https://www.youtube.com/watch?v=86ZCsUfgLRQ>`_.
    I have implemented the storage class for the telemetry of the VIS instrument and worked on the overall design.
-   After more than a year of operations, and more than 70,000 images produced, not a single bug has been found!
+   After more than a year of operations, and 80,000 images produced, not a single bug has been found!
 
 SIM
    As the name implies, the simulation pipeline (SIM) generates simulated images for the Euclid mission.
@@ -41,6 +41,12 @@ SHE
    It relies on a modelling of the telescope and VIS instrument (the PSF model) with unprecedented precision.
    CNES delivers one of the calibration pipelines which estimate the PSF model.
    I have focused on the computational performance optimization, integration and automation of this pipeline.
+
+On System side, I have been deeply involved in the design, prototyping and testing of the orchestrator (COORS).
+I have specified and contributed to the design of the Profiling Database, which stores systematic pipeline profiling metrics.
+I have also co-led the System-wide integration test campaigns known as Scientific Challenges,
+and developed many automated testing tools for the Euclid Archive System (EAS), for the Infrastructure Abstraction Layer (IAL), for the Common Tools,
+as well as for the pipelines themselves.
 
 |clear-float|
 
