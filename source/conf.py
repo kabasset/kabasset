@@ -56,5 +56,5 @@ html_theme_options = {
 # https://sphinxcontrib-bibtex.readthedocs.io/en/latest/usage.html#configuration
 
 extensions.append('sphinxcontrib.bibtex')
-bibtex_bibfiles = ['journals.bib', 'proceedings.bib', 'theses.bib']
+bibtex_bibfiles = ['euclid.bib', 'journals.bib', 'proceedings.bib', 'theses.bib']
 bibtex_default_style = 'unsrt'

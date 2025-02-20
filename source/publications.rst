@@ -8,6 +8,13 @@ Journals
    :labelprefix: J
    :all:
 
+Journals (as a Euclid Builder)
+------------------------------
+
+.. bibliography:: euclid.bib
+   :labelprefix: E
+   :all:
+
 Proceedings
 -----------
 
