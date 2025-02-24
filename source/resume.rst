@@ -137,10 +137,14 @@ Teaching
    ========= ============================ ====
    Space missions: Ground segment
    ===========================================
-   2024      CNES-Education summer school Measuring distances with Euclid (1h15)
-   2024      ISAE-SUPAERO                 The mission segment (1h30)
-   2023      CNES                         The Euclid science ground segment (1h30)
-   2022-2023 Hanoi Uni.                   Ground segment software (2x 2h, remotely)
+   2024      CNES-Education summer school | Measuring distances with Euclid
+                                          | (1h15)
+   2024-2025 ISAE-SUPAERO                 | The mission segment
+                                          | (2x 1h30)
+   2023-2025 CNES                         | The Euclid science ground segment
+                                          | (2x 1h30)
+   2022-2023 Hanoi Uni.                   | Ground segment software
+                                          | (2x 2h, remotely)
    ========= ============================ ====
 
 .. table::
@@ -150,8 +154,10 @@ Teaching
    ==== ============ ====
    CPU architecture
    ======================
-   2024 CNES         Concepts, profiling, optimization (1h)
-   2022 Mêlée Euclid Concepts, profiling, optimization (1h)
+   2024 CNES         | Concepts, profiling, optimization
+                     | (1h)
+   2022 Mêlée Euclid | Concepts, profiling, optimization
+                     | (1h)
    ==== ============ ====
 
 .. table::
@@ -161,9 +167,12 @@ Teaching
    ==== ===== ====
    Languages
    ===============
-   2024 CNES  Metaprogramming with C++ (1h)
-   2011 ENSAI Object oriented programming with C++ (6h tutorial)
-   2011 ENSAI Initiation to LaTeX (6h tutorial)
+   2024 CNES  | Metaprogramming with C++
+              | (1h)
+   2011 ENSAI | Object oriented programming with C++
+              | (6h tutorial)
+   2011 ENSAI | Initiation to LaTeX
+              | (6h tutorial)
    ==== ===== ====
 
 .. table::
@@ -173,8 +182,10 @@ Teaching
    ==== ================== ====
    Microscopy image processing
    ============================
-   2013 CNRS, Uni. Paris 7 Spot detection (1h tutorial)
-   2013 CNRS, Uni. Paris 7 Spot tracking (1h tutorial)
+   2013 CNRS, Uni. Paris 7 | Spot tracking
+                           | (1h tutorial)
+   2013 CNRS, Uni. Paris 7 | Spot detection
+                           | (1h tutorial)
    ==== ================== ====
 
 Supervision
@@ -196,14 +207,14 @@ Supervision
    :width: 100%
    :widths: 20 80
 
-   ========= ====
+   ============ ====
    PhD student
-   ==============
-   2024-2027 Tanguy Delmond (co-supervisor)
-   \         * Bayesian inference
-             * Artificial intelligence
-             * Software development (C++/Python, GPU)
-   ========= ====
+   =================
+   2024-present Tanguy Delmond (co-supervisor)
+   \            * Bayesian inference
+                * Artificial intelligence
+                * Software development (C++/Python, GPU)
+   ============ ====
 
 .. table::
    :width: 100%
@@ -251,6 +262,18 @@ Outreach
    :widths: 20 80
 
    ==== ====
+   The Euclid mission, from the ground segment point of view
+   =========
+   2025 Centrale-Supelec (visiting CNES)
+   2023 Paris Air Show, Le Bourget
+   2023 ESEO Angers (visiting CNES)
+   ==== ====
+
+.. table::
+   :width: 100%
+   :widths: 20 80
+
+   ==== ====
    `The universe measures 1000 <https://www.youtube.com/watch?v=S_MS6loQQwo>`_
    =========
    2024 TEDx INSA Toulouse
@@ -263,17 +286,7 @@ Outreach
    ==== ====
    Shedding light on our Dark Universe: Euclid, Lisa
    =========
-   2024 INSA Toulouse
-   ==== ====
-
-.. table::
-   :width: 100%
-   :widths: 20 80
-
-   ==== ====
-   The Euclid mission, from the ground segment point of view
-   =========
-   2023 Paris Air Show, Le Bourget
+   2024 INSA Toulouse (visiting CNES)
    ==== ====
 
 .. table::
@@ -306,6 +319,7 @@ Education
    ==== ====
    Courses with CNES
    =========
+   2025 Environmental impact of the space sector (by AéroDécarbo)
    2024 Astronomy (by IRAP, Pic du Midi Observatory)
    2024 `MaNiTou summer school on gravitational waves <https://indico.in2p3.fr/event/31714/>`_ (by L2IT)
    2024 Image Quality
