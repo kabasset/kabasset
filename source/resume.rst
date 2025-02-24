@@ -210,12 +210,28 @@ Supervision
    :widths: 20 80
 
    ==== ====
-   Engineering internships
+   Master 2 Research internships
    =========
    2024 Tanguy Delmond, ENSEEIHT (6 months)
    \    * Bayesian inference
         * Source detection
         * Software development (Python)
+   2017 Peter Kettig, Université Toulouse III (6 months)
+   \    * Image processing
+        * Library benchmarking (C++, Python)
+        * Software development (C++)
+   2015 Vincent Briane, INSA Rouen (6 months, co-supervisor)
+   \    * Intracellular microscopy
+        * Bayesian image processing
+   ==== ====
+
+.. table::
+   :width: 100%
+   :widths: 20 80
+
+   ==== ====
+   Engineering internships
+   =========
    2023 Edgar Remi, ENSEEIHT (6 months)
    \    * Data compression benchmarking
         * Software development (C++)
@@ -225,22 +241,6 @@ Supervision
    2018 Stanislas Bruhière, Centrale-Supélec (6 months)
    \    * GUI generation
         * Software development (Python)
-   ==== ====
-
-.. table::
-   :width: 100%
-   :widths: 20 80
-
-   ==== ====
-   Master 2 Research internships
-   =========
-   2017 Peter Kettig, Université Toulouse III (6 months)
-   \    * Image processing
-        * Library benchmarking (C++, Python)
-        * Software development (C++)
-   2015 Vincent Briane, INSA Rouen (6 months, co-supervisor)
-   \    * Intracellular microscopy
-        * Bayesian image processing
    ==== ====
 
 Outreach
