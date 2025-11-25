@@ -66,9 +66,8 @@ Public images (data releases) can be processed by anyone outside the consortium.
 For example, the image below is produced with::
 
    pip install azulero
-   azul find UGC11116  # Returns 102159776
-   azul retrieve 102159776  # Downloads MER data
-   azul process 102159776  # Renders color image
+   azul retrieve 102159776
+   azul process 102159776
 
 .. figure:: https://raw.githubusercontent.com/kabasset/azulero/develop/UGC11116.jpg
    :alt: UGC11116
@@ -77,6 +76,7 @@ For example, the image below is produced with::
    :target: https://github.com/kabasset/azulero
 
    Color image of UGC11116 produced with Azul from public Euclid Q1 data.
+   
    Credit: ESA Euclid / Euclid Consortium / NASA / Q1-2025 / Antoine Basset (CNES)
 
 |clear-float|
