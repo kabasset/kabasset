@@ -9,8 +9,8 @@ Software
    :align: right
    :target: https://www.esa.int/Science_Exploration/Space_Science/Euclid
 
-Euclid
-------
+Euclid Science Ground Segment
+-----------------------------
 
 As a member of the Euclid Science Ground Segment development group, I have been developping software for eight years.
 To my knowledge, I have contributed to all of the Euclid Processing Functions but MER.
@@ -47,6 +47,37 @@ I have specified and contributed to the design of the Profiling Database, which 
 I have also co-led the System-wide integration test campaigns known as Scientific Challenges,
 and developed many automated testing tools for the Euclid Archive System (EAS), for the Infrastructure Abstraction Layer (IAL), for the Common Tools,
 as well as for the pipelines themselves.
+
+|clear-float|
+
+.. image:: https://raw.githubusercontent.com/kabasset/azulero/v0.1.0/azul.png
+   :alt: Azul
+   :width: 20%
+   :align: right
+   :target: https://github.com/kabasset/azulero
+
+Azul
+----
+
+Azul is a package aimed at streamlining the production of Public Outreach data based on Euclid scientific products.
+It provides tools for finding, downloading and fusing images produced by MER, as well as generating pan-and-zoom videos.
+
+Public images (data releases) can be processed by anyone outside the consortium.
+For example, the image below is produced with::
+
+   pip install azulero
+   azul find UGC11116  # Returns 102159776
+   azul retrieve 102159776  # Downloads MER data
+   azul process 102159776  # Renders color image
+
+.. figure:: https://raw.githubusercontent.com/kabasset/azulero/develop/UGC11116.jpg
+   :alt: UGC11116
+   :width: 100%
+   :align: center
+   :target: https://github.com/kabasset/azulero
+
+   Color image of UGC11116 produced with Azul from public Euclid Q1 data.
+   Credit: ESA Euclid / Euclid Consortium / NASA / Q1-2025 / Antoine Basset (CNES)
 
 |clear-float|
 
