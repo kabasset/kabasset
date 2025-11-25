@@ -54,8 +54,8 @@
 <p><div style="clear: both"></div></p>
 <a class="reference external image-reference" href="https://www.esa.int/Science_Exploration/Space_Science/Euclid"><img alt="Linx" class="align-right" src="https://www.esa.int/var/esa/storage/images/science_exploration/space_science/euclid/24495561-6-eng-GB/Euclid_pillars.png" style="width: 20%;" />
 </a>
-<section id="euclid">
-<h2>Euclid</h2>
+<section id="euclid-science-ground-segment">
+<h2>Euclid Science Ground Segment</h2>
 <p>As a member of the Euclid Science Ground Segment development group, I have been developping software for eight years.
 To my knowledge, I have contributed to all of the Euclid Processing Functions but MER.
 Here is a summary of my main contributions.</p>
@@ -88,6 +88,30 @@ I have specified and contributed to the design of the Profiling Database, which 
 I have also co-led the System-wide integration test campaigns known as Scientific Challenges,
 and developed many automated testing tools for the Euclid Archive System (EAS), for the Infrastructure Abstraction Layer (IAL), for the Common Tools,
 as well as for the pipelines themselves.</p>
+<p><div style="clear: both"></div></p>
+<a class="reference external image-reference" href="https://github.com/kabasset/azulero"><img alt="Azul" class="align-right" src="https://raw.githubusercontent.com/kabasset/azulero/v0.1.0/azul.png" style="width: 20%;" />
+</a>
+</section>
+<section id="azul">
+<h2>Azul</h2>
+<p>Azul is a package aimed at streamlining the production of Public Outreach data based on Euclid scientific products.
+It provides tools for finding, downloading and fusing images produced by MER, as well as generating pan-and-zoom videos.</p>
+<p>Public images (data releases) can be processed by anyone outside the consortium.
+For example, the image below is produced with:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">azulero</span>
+<span class="n">azul</span> <span class="n">find</span> <span class="n">UGC11116</span>  <span class="c1"># Returns 102159776</span>
+<span class="n">azul</span> <span class="n">retrieve</span> <span class="mi">102159776</span>  <span class="c1"># Downloads MER data</span>
+<span class="n">azul</span> <span class="n">process</span> <span class="mi">102159776</span>  <span class="c1"># Renders color image</span>
+</pre></div>
+</div>
+<figure class="align-center" id="id1">
+<a class="reference external image-reference" href="https://github.com/kabasset/azulero"><img alt="UGC11116" src="https://raw.githubusercontent.com/kabasset/azulero/develop/UGC11116.jpg" style="width: 100%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Color image of UGC11116 produced with Azul from public Euclid Q1 data.
+Credit: ESA Euclid / Euclid Consortium / NASA / Q1-2025 / Antoine Basset (CNES)</span></p>
+</figcaption>
+</figure>
 <p><div style="clear: both"></div></p>
 <a class="reference external image-reference" href="https://github.com/kabasset/Linx"><img alt="Linx" class="align-right" src="https://raw.githubusercontent.com/kabasset/Linx/develop/doc/diagrams/logo_square.svg" style="width: 20%;" />
 </a>
@@ -214,7 +238,8 @@ This separation yields huge speed-ups wrt. classical libraries in some cases.</p
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="interests.html">Interests</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Software</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#euclid">Euclid</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#euclid-science-ground-segment">Euclid Science Ground Segment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#azul">Azul</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#linx">Linx</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#elefits">EleFits</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#splider">Splider</a></li>
@@ -247,7 +272,7 @@ This separation yields huge speed-ups wrt. classical libraries in some cases.</p
     </div>
         
     <div class="footer">
-      &#169;2023-2025, Antoine Basset. Last updated on Monday, February 24, 2025.
+      &#169;2023-2025, Antoine Basset. Last updated on Tuesday, November 25, 2025.
       
       |
       Powered by <a href="https://www.sphinx-doc.org/">Sphinx 8.1.3</a>
