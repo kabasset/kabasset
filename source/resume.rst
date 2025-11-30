@@ -71,6 +71,7 @@ Career
                 * Profiling, optimization, parallelization
    2015-present Project `Euclid <https://www.esa.int/Science_Exploration/Space_Science/Euclid>`_
    \            * Laureate of the Team Euclid STAR Prize 2021
+                * Public outreach image rendering
                 * PSF calibration
                 * Operations
                 * System testing and tools development
@@ -198,6 +199,10 @@ Supervision
    ========= ====
    Postdoc
    ==============
+   2026-2028 Ivan Martin Vilchez
+   \         * Bayesian inferrence
+             * Deep learning
+             * Software development (Python, GPU)
    2015-2017 Tristan Grégoire (3 years, co-supervisor)
    \         * Astronomical catalog IO library
              * Software development (C/C++)
@@ -207,14 +212,14 @@ Supervision
    :width: 100%
    :widths: 20 80
 
-   ============ ====
+   ========= ====
    PhD student
-   =================
-   2024-present Tanguy Delmond (co-supervisor)
-   \            * Bayesian inference
-                * Artificial intelligence
-                * Software development (C++/Python, GPU)
-   ============ ====
+   ==============
+   2024-2027 Tanguy Delmond (co-director)
+   \         * Bayesian inference
+             * Deep learning
+             * Software development (Python, GPU)
+   ========= ====
 
 .. table::
    :width: 100%

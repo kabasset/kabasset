@@ -9,37 +9,38 @@
 from datetime import datetime
 import locale
 
-project = 'Antoine Basset'
-author = 'Antoine Basset'
-language = 'en'
-locale.setlocale(locale.LC_TIME, 'en_US.utf8')
+project = "Antoine Basset"
+author = "Antoine Basset"
+language = "en"
+locale.setlocale(locale.LC_TIME, "en_US.utf8")
 
 now = datetime.now()
 init_year = 2023
-copyright_years = now.year if now.year == init_year else f'{init_year}-{now.year}'
-copyright = f'{copyright_years}, Antoine Basset'
-# FIXME use html_last_updated_fmt if working
-copyright += f'. Last updated on {now.strftime("%A, %B %d, %Y")}'
+copyright_years = now.year if now.year == init_year else f"{init_year}-{now.year}"
+copyright = f"{copyright_years}, Antoine Basset.<br/>"
+copyright += f"Background image: NGC 6536. Credit: ESA Euclid / Euclid Consortium / NASA / Q1-2025 / Antoine Basset (CNES).<br/>"
+copyright += f"Last updated on {now.strftime('%A, %B %d, %Y')}"
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = ['sphinx.ext.githubpages']
-source_suffix = '.rst'
-templates_path = ['_templates']
-master_doc = 'index'
-exclude_patterns = ['_build']
-pygments_style = 'sphinx'
+extensions = ["sphinx.ext.githubpages"]
+source_suffix = ".rst"
+templates_path = ["_templates"]
+master_doc = "index"
+exclude_patterns = ["_build"]
+pygments_style = "sphinx"
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
-html_theme = 'alabaster'
-html_title = 'Antoine Basset'
-html_static_path = ['_static']
-html_theme_path = ['_themes']
-html_favicon = 'favicon.png'
-html_css_files = ['custom.css']
+html_theme = "alabaster"
+html_title = "Antoine Basset"
+html_static_path = ["_static"]
+html_theme_path = ["_themes"]
+# html_logo = "_static/logo.png"
+html_favicon = "favicon.png"
+html_css_files = ["custom.css"]
 
 html_use_index = False
 html_permalinks = False
@@ -49,12 +50,12 @@ html_show_copyright = True
 
 html_theme_options = {
     # 'fixed_sidebar': True,  # Cannot search if window is too small
-    'show_relbars': True,
+    "show_relbars": True,
 }
 
 # -- Options for BibTeX ------------------------------------------------------
 # https://sphinxcontrib-bibtex.readthedocs.io/en/latest/usage.html#configuration
 
-extensions.append('sphinxcontrib.bibtex')
-bibtex_bibfiles = ['euclid.bib', 'journals.bib', 'proceedings.bib', 'theses.bib']
-bibtex_default_style = 'unsrt'
+extensions.append("sphinxcontrib.bibtex")
+bibtex_bibfiles = ["euclid.bib", "journals.bib", "proceedings.bib", "theses.bib"]
+bibtex_default_style = "unsrt"

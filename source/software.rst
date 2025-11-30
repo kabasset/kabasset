@@ -22,7 +22,7 @@ LE1-VIS
    including `Early Realease Observations <https://www.esa.int/Science_Exploration/Space_Science/Euclid/Euclid_s_first_images_the_dazzling_edge_of_darkness>`_
    and `the 208-Gigapixel glimpse <https://www.youtube.com/watch?v=86ZCsUfgLRQ>`_.
    I have implemented the storage class for the telemetry of the VIS instrument and worked on the overall design.
-   After more than a year of operations, and 80,000 images produced, not a single bug has been found!
+   After more than two years of operations, and 125,000 images produced, not a single bug has been found!
 
 SIM
    As the name implies, the simulation pipeline (SIM) generates simulated images for the Euclid mission.
@@ -76,7 +76,7 @@ For example, the image below is produced with::
    :target: https://github.com/kabasset/azulero
 
    Color image of UGC11116 produced with Azul from public Euclid Q1 data.
-   
+
    Credit: ESA Euclid / Euclid Consortium / NASA / Q1-2025 / Antoine Basset (CNES)
 
 |clear-float|
