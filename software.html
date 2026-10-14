@@ -1,61 +1,114 @@
 <!DOCTYPE html>
 
-<html lang="en" data-content_root="./">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<html :class="{ 'dark' : darkMode === true }" data-content_root="./" lang="en" x-data="{ darkMode: $persist(window.matchMedia('(prefers-color-scheme: dark)').matches), activeSection: ''}">
+<head>
+<script>
+    (function () {
+      // Set initial color scheme
+      if ((localStorage.getItem("_x_darkMode") === "true") || (window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+        document.documentElement.classList.add("dark");
+      }
 
-    <title>Software &#8212; Antoine Basset</title>
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
-    <link rel="stylesheet" type="text/css" href="_static/basic.css?v=b08954a9" />
-    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
-    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=a5f15eb1" />
-    <script src="_static/documentation_options.js?v=7f41d439"></script>
-    <script src="_static/doctools.js?v=fd6eb6e6"></script>
-    <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
-    <link rel="icon" href="_static/favicon.png"/>
-    <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Resume" href="resume.html" />
-    <link rel="prev" title="Interests" href="interests.html" />
-   
-  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
-  
-
-  
-  
-
-  </head><body>
-  
-
-    <div class="document">
-      <div class="documentwrapper">
-        <div class="bodywrapper">
-              <div class="related top">
-                &nbsp;
-  <nav id="rellinks">
-    <ul>
-        <li>
-          &larr;
-          <a href="interests.html" title="Previous document">Interests</a>
-        </li>
-        <li>
-          <a href="resume.html" title="Next document">Resume</a>
-          &rarr;
-        </li>
-    </ul>
-  </nav>
-              </div>
-          
-
-          <div class="body" role="main">
-            
-  <section id="software">
-<h1>Software</h1>
-<p><div style="clear: both"></div></p>
-<a class="reference external image-reference" href="https://www.esa.int/Science_Exploration/Space_Science/Euclid"><img alt="Linx" class="align-right" src="https://www.esa.int/var/esa/storage/images/science_exploration/space_science/euclid/24495561-6-eng-GB/Euclid_pillars.png" style="width: 20%;" />
+      // Watch for media preference changes
+      window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", (event) => {
+        localStorage.setItem("_x_darkMode", event.matches);
+        document.documentElement.classList.toggle("dark", event.matches);
+      });
+    })();
+  </script>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta charset="utf-8"/>
+<meta content="#ffffff" media="(prefers-color-scheme: light)" name="theme-color"/>
+<meta content="#030711" media="(prefers-color-scheme: dark)" name="theme-color"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Software | Antoine Basset</title>
+<meta content="Software | Antoine Basset" property="og:title"/>
+<meta content="Software | Antoine Basset" name="twitter:title"/>
+<link href="_static/pygments.css?v=03e43079" rel="stylesheet" type="text/css"/>
+<link href="_static/theme.css?v=d6d7c91b" rel="stylesheet" type="text/css"/>
+<link href="_static/sphinx-new-tab-link.css?v=d87cb1ac" rel="stylesheet" type="text/css"/>
+<link href="_static/sphinxcontrib-images/LightBox2/lightbox2/dist/css/lightbox.min.css?v=6e7d0de0" rel="stylesheet" type="text/css"/>
+<link href="_static/sphinxcontrib-images/LightBox2/lightbox2-customize/pointer.css?v=c97663ff" rel="stylesheet" type="text/css"/>
+<link href="_static/lists.css?v=2d155ae4" rel="stylesheet" type="text/css"/>
+<link href="_static/figure.css?v=3653bdfa" rel="stylesheet" type="text/css"/>
+<link href="_static/bibliography.css?v=cc49c991" rel="stylesheet" type="text/css"/>
+<link href="_static/favicon.png" rel="icon"/>
+<link href="search.html" rel="search" title="Search"/>
+<link href="resume.html" rel="next" title="Resume"/>
+<link href="interests.html" rel="prev" title="Interests"/>
+</head>
+<body :class="{ 'overflow-hidden': showSidebar }" class="min-h-screen font-sans antialiased bg-background text-foreground" x-data="{ showSidebar: false, showScrollTop: false }">
+<div @click.self="showSidebar = false" class="fixed inset-0 z-50 overflow-hidden bg-background/80 backdrop-blur-sm md:hidden" x-cloak="" x-show="showSidebar"></div><div class="relative flex flex-col min-h-screen" id="page"><a class="absolute top-0 left-0 z-[100] block bg-background p-4 text-xl transition -translate-x-full opacity-0 focus:translate-x-0 focus:opacity-100" href="#content">
+      Skip to content
+    </a><header class="sticky top-0 z-40 w-full border-b shadow-xs border-border bg-background/90 backdrop-blur"><div class="container flex items-center h-14">
+<div class="hidden mr-4 md:flex">
+<a class="flex items-center mr-6" href="index.html"><span class="hidden font-bold sm:inline-block text-clip whitespace-nowrap">Antoine Basset</span>
+</a></div><button @click="showSidebar = true" class="inline-flex items-center justify-center h-10 px-0 py-2 mr-2 text-base font-medium transition-colors rounded-md hover:text-accent-foreground hover:bg-transparent md:hidden" type="button">
+<svg aria-hidden="true" fill="currentColor" height="24" viewbox="0 96 960 960" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M152.587 825.087q-19.152 0-32.326-13.174t-13.174-32.326q0-19.152 13.174-32.326t32.326-13.174h440q19.152 0 32.326 13.174t13.174 32.326q0 19.152-13.174 32.326t-32.326 13.174h-440Zm0-203.587q-19.152 0-32.326-13.174T107.087 576q0-19.152 13.174-32.326t32.326-13.174h320q19.152 0 32.326 13.174T518.087 576q0 19.152-13.174 32.326T472.587 621.5h-320Zm0-203.587q-19.152 0-32.326-13.174t-13.174-32.326q0-19.152 13.174-32.326t32.326-13.174h440q19.152 0 32.326 13.174t13.174 32.326q0 19.152-13.174 32.326t-32.326 13.174h-440ZM708.913 576l112.174 112.174q12.674 12.674 12.674 31.826t-12.674 31.826Q808.413 764.5 789.261 764.5t-31.826-12.674l-144-144Q600 594.391 600 576t13.435-31.826l144-144q12.674-12.674 31.826-12.674t31.826 12.674q12.674 12.674 12.674 31.826t-12.674 31.826L708.913 576Z"></path>
+</svg>
+<span class="sr-only">Toggle navigation menu</span>
+</button>
+<div class="flex items-center justify-between flex-1 gap-2 sm:gap-4 md:justify-end">
+<div class="flex-1 w-full md:w-auto md:flex-none"><form @keydown.k.window.meta="$refs.search.focus()" action="search.html" class="relative flex items-center group" id="searchbox" method="get">
+<input aria-label="Search the docs" class="inline-flex items-center font-medium transition-colors bg-transparent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 ring-offset-background border border-input hover:bg-accent focus:bg-accent hover:text-accent-foreground focus:text-accent-foreground hover:placeholder-accent-foreground py-2 px-4 relative h-9 w-full justify-start rounded-[0.5rem] text-sm text-muted-foreground sm:pr-12 md:w-40 lg:w-64" id="search-input" name="q" placeholder="Search ..." type="search" x-ref="search"/>
+<kbd class="pointer-events-none absolute right-1.5 top-2 hidden h-5 select-none text-muted-foreground items-center gap-1 rounded border border-border bg-muted px-1.5 font-mono text-[10px] font-medium opacity-100 sm:flex group-hover:bg-accent group-hover:text-accent-foreground">
+<span class="text-xs">⌘</span>
+    K
+  </kbd>
+</form>
+</div>
+<nav class="flex items-center gap-1">
+<button @click="darkMode = !darkMode" class="relative inline-flex items-center justify-center px-0 text-sm font-medium transition-colors rounded-md hover:bg-accent hover:text-accent-foreground h-9 w-9" title="Toggle color scheme" type="button">
+<svg class="absolute transition-all scale-100 rotate-0 dark:-rotate-90 dark:scale-0" fill="currentColor" height="16" viewbox="0 96 960 960" width="16" xmlns="http://www.w3.org/2000/svg">
+<path d="M480 685q45.456 0 77.228-31.772Q589 621.456 589 576q0-45.456-31.772-77.228Q525.456 467 480 467q-45.456 0-77.228 31.772Q371 530.544 371 576q0 45.456 31.772 77.228Q434.544 685 480 685Zm0 91q-83 0-141.5-58.5T280 576q0-83 58.5-141.5T480 376q83 0 141.5 58.5T680 576q0 83-58.5 141.5T480 776ZM80 621.5q-19.152 0-32.326-13.174T34.5 576q0-19.152 13.174-32.326T80 530.5h80q19.152 0 32.326 13.174T205.5 576q0 19.152-13.174 32.326T160 621.5H80Zm720 0q-19.152 0-32.326-13.174T754.5 576q0-19.152 13.174-32.326T800 530.5h80q19.152 0 32.326 13.174T925.5 576q0 19.152-13.174 32.326T880 621.5h-80Zm-320-320q-19.152 0-32.326-13.174T434.5 256v-80q0-19.152 13.174-32.326T480 130.5q19.152 0 32.326 13.174T525.5 176v80q0 19.152-13.174 32.326T480 301.5Zm0 720q-19.152 0-32.326-13.17Q434.5 995.152 434.5 976v-80q0-19.152 13.174-32.326T480 850.5q19.152 0 32.326 13.174T525.5 896v80q0 19.152-13.174 32.33-13.174 13.17-32.326 13.17ZM222.174 382.065l-43-42Q165.5 327.391 166 308.239t13.174-33.065q13.435-13.674 32.587-13.674t32.065 13.674l42.239 43q12.674 13.435 12.555 31.706-.12 18.272-12.555 31.946-12.674 13.674-31.445 13.413-18.772-.261-32.446-13.174Zm494 494.761-42.239-43q-12.674-13.435-12.674-32.087t12.674-31.565Q686.609 756.5 705.38 757q18.772.5 32.446 13.174l43 41.761Q794.5 824.609 794 843.761t-13.174 33.065Q767.391 890.5 748.239 890.5t-32.065-13.674Zm-42-494.761Q660.5 369.391 661 350.62q.5-18.772 13.174-32.446l41.761-43Q728.609 261.5 747.761 262t33.065 13.174q13.674 13.435 13.674 32.587t-13.674 32.065l-43 42.239q-13.435 12.674-31.706 12.555-18.272-.12-31.946-12.555Zm-495 494.761Q165.5 863.391 165.5 844.239t13.674-32.065l43-42.239q13.435-12.674 32.087-12.674t31.565 12.674Q299.5 782.609 299 801.38q-.5 18.772-13.174 32.446l-41.761 43Q231.391 890.5 212.239 890t-33.065-13.174ZM480 576Z"></path>
+</svg>
+<svg class="absolute transition-all scale-0 rotate-90 dark:rotate-0 dark:scale-100" fill="currentColor" height="16" viewbox="0 96 960 960" width="16" xmlns="http://www.w3.org/2000/svg">
+<path d="M480 936q-151 0-255.5-104.5T120 576q0-138 90-239.5T440 218q25-3 39 18t-1 44q-17 26-25.5 55t-8.5 61q0 90 63 153t153 63q31 0 61.5-9t54.5-25q21-14 43-1.5t19 39.5q-14 138-117.5 229T480 936Zm0-80q88 0 158-48.5T740 681q-20 5-40 8t-40 3q-123 0-209.5-86.5T364 396q0-20 3-40t8-40q-78 32-126.5 102T200 576q0 116 82 198t198 82Zm-10-270Z"></path>
+</svg>
+</button>
+</nav>
+</div>
+</div>
+</header>
+<div class="flex-1"><div class="container md:grid md:grid-cols-[220px_minmax(0,1fr)] md:gap-6 lg:grid-cols-[240px_minmax(0,1fr)] lg:gap-10"><aside :aria-hidden="!showSidebar" :class="{ 'translate-x-0': showSidebar }" class="fixed inset-y-0 left-0 md:top-14 z-50 md:z-30 bg-background md:bg-transparent transition-all duration-100 -translate-x-full md:translate-x-0 ml-0 p-6 md:p-0 md:-ml-2 md:h-[calc(100vh-3.5rem)] w-5/6 md:w-full overflow-y-auto border-r border-border md:sticky" id="left-sidebar">
+<a class="justify-start text-sm md:!hidden bg-background" href="index.html"><span class="font-bold text-clip whitespace-nowrap">Antoine Basset</span>
 </a>
+<div class="relative overflow-hidden md:overflow-auto my-4 md:my-0">
+<div class="overflow-y-auto h-full w-full relative pr-6"><nav class="table w-full min-w-full my-6 lg:my-8">
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="interests.html">Interests</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Software</a></li>
+<li class="toctree-l1"><a class="reference internal" href="resume.html">Resume</a></li>
+<li class="toctree-l1"><a class="reference internal" href="publications.html">Publications</a></li>
+</ul>
+</nav>
+</div>
+</div>
+<button @click="showSidebar = false" class="absolute md:hidden right-4 top-4 rounded-sm opacity-70 transition-opacity hover:opacity-100" type="button">
+<svg class="h-4 w-4" fill="currentColor" height="24" stroke="none" viewbox="0 96 960 960" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M480 632 284 828q-11 11-28 11t-28-11q-11-11-11-28t11-28l196-196-196-196q-11-11-11-28t11-28q11-11 28-11t28 11l196 196 196-196q11-11 28-11t28 11q11 11 11 28t-11 28L536 576l196 196q11 11 11 28t-11 28q-11 11-28 11t-28-11L480 632Z"></path>
+</svg>
+</button>
+</aside>
+<main class="relative py-6 lg:gap-10 lg:py-8 xl:grid xl:grid-cols-[1fr_300px]">
+<div class="w-full min-w-0 mx-auto">
+<nav aria-label="breadcrumbs" class="flex items-center mb-4 space-x-1 text-sm text-muted-foreground">
+<a class="overflow-hidden text-ellipsis whitespace-nowrap hover:text-foreground" href="index.html">
+<span class="hidden md:inline">Antoine Basset</span>
+<svg aria-label="Home" class="md:hidden" fill="currentColor" height="18" stroke="none" viewbox="0 96 960 960" width="18" xmlns="http://www.w3.org/2000/svg">
+<path d="M240 856h120V616h240v240h120V496L480 316 240 496v360Zm-80 80V456l320-240 320 240v480H520V696h-80v240H160Zm320-350Z"></path>
+</svg>
+</a>
+<div class="mr-1">/</div><span aria-current="page" class="font-medium text-foreground overflow-hidden text-ellipsis whitespace-nowrap">Software</span>
+</nav>
+<div id="content" role="main">
+<section id="software">
+<h1>Software</h1>
 <section id="euclid-science-ground-segment">
 <h2>Euclid Science Ground Segment</h2>
+<a class="reference external image-reference" href="https://www.esa.int/Science_Exploration/Space_Science/Euclid" rel="noreferrer" target="_blank"><img alt="Linx" class="align-right" src="https://www.esa.int/var/esa/storage/images/science_exploration/space_science/euclid/24495561-6-eng-GB/Euclid_pillars.png" style="width: 20%;"/>
+</a>
 <p>As a member of the Euclid Science Ground Segment development group,
 I have been developing software for more than a decade.
 To my knowledge, I have contributed to all of the Euclid Processing Functions but MER.
@@ -63,8 +116,8 @@ Here is a summary of my main contributions.</p>
 <dl class="simple">
 <dt>LE1-VIS</dt><dd><p>The Level 1 pipeline (LE1) transforms the raw Euclid telemetry into data products usable by downstream pipelines: images and metadata.
 In other words, every Euclid image ever published or processed has been produced by LE1,
-including <a class="reference external" href="https://www.esa.int/Science_Exploration/Space_Science/Euclid/Euclid_s_first_images_the_dazzling_edge_of_darkness">Early Release Observations</a>
-and <a class="reference external" href="https://www.youtube.com/watch?v=86ZCsUfgLRQ">the 208-Gigapixel glimpse</a>.
+including <a class="reference external" href="https://www.esa.int/Science_Exploration/Space_Science/Euclid/Euclid_s_first_images_the_dazzling_edge_of_darkness" rel="noreferrer" target="_blank">Early Release Observations</a>
+and <a class="reference external" href="https://www.youtube.com/watch?v=86ZCsUfgLRQ" rel="noreferrer" target="_blank">the 208-Gigapixel glimpse</a>.
 I have implemented the storage class for the telemetry of the VIS instrument and worked on the overall design.
 After more than two years of operations, and more than 170,000 images produced, not a single bug has been found!</p>
 </dd>
@@ -72,7 +125,7 @@ After more than two years of operations, and more than 170,000 images produced, 
 It includes simulators of Euclid instruments VIS and NISP, as well as the external surveys used by Euclid.
 My main contribution in terms of software development is the test data management tool,
 which connects on-the-fly to computing centers to feed unit tests with distributed data sets.
-It has been integrated into <a class="reference external" href="https://github.com/astrorama/Elements">Elements</a>.</p>
+It has been integrated into <a class="reference external" href="https://github.com/astrorama/Elements" rel="noreferrer" target="_blank">Elements</a>.</p>
 </dd>
 <dt>SIR, SPE</dt><dd><p>The near-infrared spectroscopy pipeline (SIR) extract galaxy spectra from the spectro-images of Euclid,
 and then the redshifts are estimated by the spectral features pipeline (SPE).
@@ -89,22 +142,21 @@ I have specified and contributed to the design of the Profiling Database, which 
 I have also co-led the System-wide integration test campaigns known as Scientific Challenges,
 and developed many automated testing tools for the Euclid Archive System (EAS), for the Infrastructure Abstraction Layer (IAL), for the Common Tools,
 as well as for the pipelines themselves.</p>
-<p><div style="clear: both"></div></p>
-<a class="reference external image-reference" href="https://kabasset.github.io/azulero/versions/index.html"><img alt="Azulero" class="align-right" src="https://raw.githubusercontent.com/kabasset/azulero/v0.1.0/azul.png" style="width: 20%;" />
-</a>
 </section>
 <section id="azulero">
 <h2>Azulero</h2>
+<a class="reference external image-reference" href="https://kabasset.github.io/azulero/versions/index.html" rel="noreferrer" target="_blank"><img alt="Azulero" class="align-right" src="https://raw.githubusercontent.com/kabasset/azulero/v0.1.0/azul.png" style="width: 20%;"/>
+</a>
 <p>Azulero is a package aimed at streamlining the production of Public Outreach data based on Euclid scientific products.
 It provides tools for finding, downloading and fusing images produced by MER, as well as generating pan-and-zoom videos.</p>
 <p>Public images (data releases) can be processed by anyone outside the consortium.
 For example, the image below is produced with:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">azulero</span>
-<span class="n">azul</span> <span class="n">retrieve</span> <span class="n">UGC11116</span> <span class="n">PGC61356</span> <span class="o">-</span><span class="n">r</span> <span class="mi">1</span><span class="n">m</span> <span class="o">|</span> <span class="n">azul</span> <span class="n">process</span>
-</pre></div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><code><span id="line-1"><span class="n">pip</span> <span class="n">install</span> <span class="n">azulero</span>
+</span><span id="line-2"><span class="n">azul</span> <span class="n">retrieve</span> <span class="n">UGC11116</span> <span class="n">PGC61356</span> <span class="o">-</span><span class="n">r</span> <span class="mi">1</span><span class="n">m</span> <span class="o">|</span> <span class="n">azul</span> <span class="n">process</span>
+</span></code></pre></div>
 </div>
 <figure class="align-center" id="id1">
-<a class="reference external image-reference" href="https://kabasset.github.io/azulero/versions/index.html"><img alt="UGC11116" src="https://kabasset.github.io/azulero/develop/_images/UGC11116_102159776.jpg" style="width: 50%;" />
+<a class="reference external image-reference" href="https://kabasset.github.io/azulero/versions/index.html" rel="noreferrer" target="_blank"><img alt="UGC11116" src="https://kabasset.github.io/azulero/develop/_images/UGC11116_102159776.jpg" style="width: 50%;"/>
 </a>
 <figcaption>
 <p><span class="caption-text">Color image of UGC11116 produced with Azul from public Euclid Q1 data.</span></p>
@@ -114,177 +166,121 @@ For example, the image below is produced with:</p>
 </figcaption>
 </figure>
 <p>In addition, the whole Q1 data release was processed with Azulero by the Centre de Données de Strasbourg (CDS).
-It can be navigated and crops can be downloaded from <a class="reference external" href="https://kabasset.github.io/azulite/index.html">Azulite</a>.</p>
-<p><div style="clear: both"></div></p>
-<a class="reference external image-reference" href="https://github.com/kabasset/Linx"><img alt="Linx" class="align-right" src="https://raw.githubusercontent.com/kabasset/Linx/develop/doc/diagrams/logo_square.svg" style="width: 20%;" />
-</a>
+It can be navigated and crops can be downloaded from <a class="reference external" href="https://kabasset.github.io/azulite/index.html" rel="noreferrer" target="_blank">Azulite</a>.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://kabasset.github.io/azulero/versions/index.html" rel="noreferrer" target="_blank">https://kabasset.github.io/azulero/versions/index.html</a></p></li>
+<li><p><a class="reference external" href="https://kabasset.github.io/azulite/index.html" rel="noreferrer" target="_blank">https://kabasset.github.io/azulite/index.html</a></p></li>
+</ul>
 </section>
 <section id="linx">
 <h2>Linx</h2>
+<a class="reference external image-reference" href="https://github.com/kabasset/Linx" rel="noreferrer" target="_blank"><img alt="Linx" class="align-right" src="https://raw.githubusercontent.com/kabasset/Linx/develop/doc/diagrams/logo_square.svg" style="width: 20%;"/>
+</a>
 <p>Linx is a C++ multidimensional image processing library prototype focused on ease of use and performance portability.
 Image processing pipelines written with Linx can run on a variety of infrastructures, including HTC, HPC and GPU farms.</p>
 <p>Here is a comparison with NumPy.
 Simple array instantiations and operations are performed:</p>
-<div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
-<span class="n">f</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-<span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">((</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">int</span><span class="p">)</span>
-<span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">default_rng</span><span class="p">()</span><span class="o">.</span><span class="n">random</span><span class="p">((</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
-<span class="n">c</span> <span class="o">=</span> <span class="n">b</span> <span class="o">-</span> <span class="n">a</span>
-</pre></div>
+<div class="highlight-py notranslate"><div class="highlight"><pre><span></span><code><span id="line-1"><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+</span><span id="line-2"><span class="n">f</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</span><span id="line-3"><span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">((</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">int</span><span class="p">)</span>
+</span><span id="line-4"><span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">default_rng</span><span class="p">()</span><span class="o">.</span><span class="n">random</span><span class="p">((</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+</span><span id="line-5"><span class="n">c</span> <span class="o">=</span> <span class="n">b</span> <span class="o">-</span> <span class="n">a</span>
+</span></code></pre></div>
 </div>
 <p>Linx:</p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="k">auto</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Linx</span><span class="o">::</span><span class="n">Sequence</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span><span class="p">(</span><span class="mi">100</span><span class="p">).</span><span class="n">linspace</span><span class="p">(</span><span class="mi">-1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span>
-<span class="k">auto</span><span class="w"> </span><span class="n">f</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">exp</span><span class="p">(</span><span class="n">x</span><span class="p">);</span>
-<span class="k">auto</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Linx</span><span class="o">::</span><span class="n">Raster</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="p">({</span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">}).</span><span class="n">fill</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
-<span class="k">auto</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Linx</span><span class="o">::</span><span class="n">random</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span><span class="p">({</span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">});</span>
-<span class="k">auto</span><span class="w"> </span><span class="n">c</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">a</span><span class="p">;</span>
-</pre></div>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><code><span id="line-1"><span class="k">auto</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Linx</span><span class="o">::</span><span class="n">Sequence</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span><span class="p">(</span><span class="mi">100</span><span class="p">).</span><span class="n">linspace</span><span class="p">(</span><span class="mi">-1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span>
+</span><span id="line-2"><span class="k">auto</span><span class="w"> </span><span class="n">f</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">exp</span><span class="p">(</span><span class="n">x</span><span class="p">);</span>
+</span><span id="line-3"><span class="k">auto</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Linx</span><span class="o">::</span><span class="n">Raster</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="p">({</span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">}).</span><span class="n">fill</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+</span><span id="line-4"><span class="k">auto</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Linx</span><span class="o">::</span><span class="n">random</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span><span class="p">({</span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">});</span>
+</span><span id="line-5"><span class="k">auto</span><span class="w"> </span><span class="n">c</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">a</span><span class="p">;</span>
+</span></code></pre></div>
 </div>
-<p><a class="reference external" href="https://github.com/kabasset/Linx">https://github.com/kabasset/Linx</a></p>
-<p><div style="clear: both"></div></p>
-<a class="reference external image-reference" href="https://github.com/CNES/EleFits"><img alt="EleFits" class="align-right" src="https://raw.githubusercontent.com/CNES/EleFits/develop/doc/diagrams/out/elefits_square.svg" style="width: 20%;" />
-</a>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/kabasset/Linx" rel="noreferrer" target="_blank">https://github.com/kabasset/Linx</a></p></li>
+</ul>
 </section>
 <section id="elefits">
 <h2>EleFits</h2>
+<a class="reference external image-reference" href="https://github.com/CNES/EleFits" rel="noreferrer" target="_blank"><img alt="EleFits" class="align-right" src="https://raw.githubusercontent.com/CNES/EleFits/develop/doc/diagrams/out/elefits_square.svg" style="width: 20%;"/>
+</a>
 <p>EleFits is a modern C++ package to read and write FITS files which focuses on safety, user-friendliness, and performance.
 At some point, the ND array implementation of EleFits should be dropped in favor of Linx.</p>
 <p>Here is a comparison with CFITSIO.
 A single-image FITS file is created from a 2D array (<code class="docutils literal notranslate"><span class="pre">(width,</span> <span class="pre">height)</span> <span class="pre">-&gt;</span> <span class="pre">data</span></code>) and a keyword record (<code class="docutils literal notranslate"><span class="pre">keyword,</span> <span class="pre">value,</span> <span class="pre">comment</span></code>):</p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">long</span><span class="w"> </span><span class="n">shape</span><span class="p">[]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">width</span><span class="p">,</span><span class="w"> </span><span class="n">height</span><span class="w"> </span><span class="p">};</span>
-<span class="kt">int</span><span class="w"> </span><span class="n">status</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-<span class="n">fitsfile</span><span class="o">*</span><span class="w"> </span><span class="n">fits</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">nullptr</span><span class="p">;</span>
-<span class="n">fits_create_file</span><span class="p">(</span><span class="o">&amp;</span><span class="n">fits</span><span class="p">,</span><span class="w"> </span><span class="n">filename</span><span class="p">.</span><span class="n">c_str</span><span class="p">(),</span><span class="w"> </span><span class="o">&amp;</span><span class="n">status</span><span class="p">);</span>
-<span class="n">fits_create_img</span><span class="p">(</span><span class="n">fits</span><span class="p">,</span><span class="w"> </span><span class="n">SHORT_IMG</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="n">shape</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">status</span><span class="p">);</span>
-<span class="n">fits_write_key</span><span class="p">(</span><span class="n">fits</span><span class="p">,</span><span class="w"> </span><span class="n">TDOUBLE</span><span class="p">,</span><span class="w"> </span><span class="n">name</span><span class="p">.</span><span class="n">c_str</span><span class="p">(),</span><span class="w"> </span><span class="o">&amp;</span><span class="n">value</span><span class="p">,</span><span class="w"> </span><span class="n">comment</span><span class="p">.</span><span class="n">c_str</span><span class="p">(),</span><span class="w"> </span><span class="o">&amp;</span><span class="n">status</span><span class="p">);</span>
-<span class="n">fits_write_img</span><span class="p">(</span><span class="n">fits</span><span class="p">,</span><span class="w"> </span><span class="n">TSHORT</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">width</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">height</span><span class="p">,</span><span class="w"> </span><span class="n">data</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">status</span><span class="p">);</span>
-</pre></div>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><code><span id="line-1"><span class="kt">long</span><span class="w"> </span><span class="n">shape</span><span class="p">[]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">width</span><span class="p">,</span><span class="w"> </span><span class="n">height</span><span class="w"> </span><span class="p">};</span>
+</span><span id="line-2"><span class="kt">int</span><span class="w"> </span><span class="n">status</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+</span><span id="line-3"><span class="n">fitsfile</span><span class="o">*</span><span class="w"> </span><span class="n">fits</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">nullptr</span><span class="p">;</span>
+</span><span id="line-4"><span class="n">fits_create_file</span><span class="p">(</span><span class="o">&amp;</span><span class="n">fits</span><span class="p">,</span><span class="w"> </span><span class="n">filename</span><span class="p">.</span><span class="n">c_str</span><span class="p">(),</span><span class="w"> </span><span class="o">&amp;</span><span class="n">status</span><span class="p">);</span>
+</span><span id="line-5"><span class="n">fits_create_img</span><span class="p">(</span><span class="n">fits</span><span class="p">,</span><span class="w"> </span><span class="n">SHORT_IMG</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="n">shape</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">status</span><span class="p">);</span>
+</span><span id="line-6"><span class="n">fits_write_key</span><span class="p">(</span><span class="n">fits</span><span class="p">,</span><span class="w"> </span><span class="n">TDOUBLE</span><span class="p">,</span><span class="w"> </span><span class="n">name</span><span class="p">.</span><span class="n">c_str</span><span class="p">(),</span><span class="w"> </span><span class="o">&amp;</span><span class="n">value</span><span class="p">,</span><span class="w"> </span><span class="n">comment</span><span class="p">.</span><span class="n">c_str</span><span class="p">(),</span><span class="w"> </span><span class="o">&amp;</span><span class="n">status</span><span class="p">);</span>
+</span><span id="line-7"><span class="n">fits_write_img</span><span class="p">(</span><span class="n">fits</span><span class="p">,</span><span class="w"> </span><span class="n">TSHORT</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">width</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">height</span><span class="p">,</span><span class="w"> </span><span class="n">data</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">status</span><span class="p">);</span>
+</span></code></pre></div>
 </div>
 <p>EleFits:</p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">Fits</span><span class="o">::</span><span class="n">SifFile</span><span class="w"> </span><span class="nf">fits</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span><span class="w"> </span><span class="n">Fits</span><span class="o">::</span><span class="n">FileMode</span><span class="o">::</span><span class="n">CREATE</span><span class="p">);</span>
-<span class="n">fits</span><span class="p">.</span><span class="n">header</span><span class="p">().</span><span class="n">write</span><span class="p">(</span><span class="n">keyword</span><span class="p">,</span><span class="w"> </span><span class="n">value</span><span class="p">,</span><span class="w"> </span><span class="s">""</span><span class="p">,</span><span class="w"> </span><span class="n">comment</span><span class="p">);</span>
-<span class="n">fits</span><span class="p">.</span><span class="n">raster</span><span class="p">().</span><span class="n">write</span><span class="p">(</span><span class="n">makeRaster</span><span class="p">(</span><span class="n">data</span><span class="p">,</span><span class="w"> </span><span class="n">width</span><span class="p">,</span><span class="w"> </span><span class="n">height</span><span class="p">));</span>
-</pre></div>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><code><span id="line-1"><span class="n">Fits</span><span class="o">::</span><span class="n">SifFile</span><span class="w"> </span><span class="nf">fits</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span><span class="w"> </span><span class="n">Fits</span><span class="o">::</span><span class="n">FileMode</span><span class="o">::</span><span class="n">CREATE</span><span class="p">);</span>
+</span><span id="line-2"><span class="n">fits</span><span class="p">.</span><span class="n">header</span><span class="p">().</span><span class="n">write</span><span class="p">(</span><span class="n">keyword</span><span class="p">,</span><span class="w"> </span><span class="n">value</span><span class="p">,</span><span class="w"> </span><span class="s">""</span><span class="p">,</span><span class="w"> </span><span class="n">comment</span><span class="p">);</span>
+</span><span id="line-3"><span class="n">fits</span><span class="p">.</span><span class="n">raster</span><span class="p">().</span><span class="n">write</span><span class="p">(</span><span class="n">makeRaster</span><span class="p">(</span><span class="n">data</span><span class="p">,</span><span class="w"> </span><span class="n">width</span><span class="p">,</span><span class="w"> </span><span class="n">height</span><span class="p">));</span>
+</span></code></pre></div>
 </div>
-<p><a class="reference external" href="https://github.com/CNES/EleFits">https://github.com/CNES/EleFits</a></p>
-<p><div style="clear: both"></div></p>
-<a class="reference external image-reference" href="https://github.com/kabasset/Splider"><img alt="Splider" class="align-right" src="https://raw.githubusercontent.com/kabasset/Splider/develop/doc/diagrams/logo_square.svg" style="width: 20%;" />
-</a>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/CNES/EleFits" rel="noreferrer" target="_blank">https://github.com/CNES/EleFits</a></p></li>
+</ul>
 </section>
 <section id="splider">
 <h2>Splider</h2>
+<a class="reference external image-reference" href="https://github.com/kabasset/Splider" rel="noreferrer" target="_blank"><img alt="Splider" class="align-right" src="https://raw.githubusercontent.com/kabasset/Splider/develop/doc/diagrams/logo_square.svg" style="width: 20%;"/>
+</a>
 <p>Splider is a cubic spline interpolation library where a spline is a list of components (intervals, knots and arguments), which each hold their cache.
 This separation yields huge speed-ups wrt. classical libraries in some cases.</p>
 <p>Here is a comparison with GSL, where an input set of knots (<code class="docutils literal notranslate"><span class="pre">u</span> <span class="pre">-&gt;</span> <span class="pre">v</span></code>) is interpolated at a set of positions (<code class="docutils literal notranslate"><span class="pre">x</span></code>):</p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">gsl_interp_accel</span><span class="o">*</span><span class="w"> </span><span class="n">acc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">gsl_interp_accel_alloc</span><span class="p">();</span>
-<span class="n">gsl_spline</span><span class="o">*</span><span class="w"> </span><span class="n">spline</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">gsl_spline_alloc</span><span class="p">(</span><span class="n">gsl_interp_cspline</span><span class="p">,</span><span class="w"> </span><span class="n">u</span><span class="p">.</span><span class="n">size</span><span class="p">());</span>
-<span class="n">gsl_spline_init</span><span class="p">(</span><span class="n">spline</span><span class="p">,</span><span class="w"> </span><span class="n">u</span><span class="p">.</span><span class="n">data</span><span class="p">(),</span><span class="w"> </span><span class="n">v</span><span class="p">.</span><span class="n">data</span><span class="p">(),</span><span class="w"> </span><span class="n">u</span><span class="p">.</span><span class="n">size</span><span class="p">());</span>
-<span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span><span class="w"> </span><span class="n">y</span><span class="p">;</span>
-<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="k">auto</span><span class="o">&amp;</span><span class="w"> </span><span class="n">e</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">   </span><span class="n">y</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">gsl_spline_eval</span><span class="p">(</span><span class="n">spline</span><span class="p">,</span><span class="w"> </span><span class="n">e</span><span class="p">,</span><span class="w"> </span><span class="n">acc</span><span class="p">));</span>
-<span class="p">}</span>
-<span class="n">gsl_interp_accel_free</span><span class="p">(</span><span class="n">acc</span><span class="p">);</span>
-<span class="n">gsl_spline_free</span><span class="p">(</span><span class="n">spline</span><span class="p">);</span>
-</pre></div>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><code><span id="line-1"><span class="n">gsl_interp_accel</span><span class="o">*</span><span class="w"> </span><span class="n">acc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">gsl_interp_accel_alloc</span><span class="p">();</span>
+</span><span id="line-2"><span class="n">gsl_spline</span><span class="o">*</span><span class="w"> </span><span class="n">spline</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">gsl_spline_alloc</span><span class="p">(</span><span class="n">gsl_interp_cspline</span><span class="p">,</span><span class="w"> </span><span class="n">u</span><span class="p">.</span><span class="n">size</span><span class="p">());</span>
+</span><span id="line-3"><span class="n">gsl_spline_init</span><span class="p">(</span><span class="n">spline</span><span class="p">,</span><span class="w"> </span><span class="n">u</span><span class="p">.</span><span class="n">data</span><span class="p">(),</span><span class="w"> </span><span class="n">v</span><span class="p">.</span><span class="n">data</span><span class="p">(),</span><span class="w"> </span><span class="n">u</span><span class="p">.</span><span class="n">size</span><span class="p">());</span>
+</span><span id="line-4"><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span><span class="w"> </span><span class="n">y</span><span class="p">;</span>
+</span><span id="line-5"><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="k">auto</span><span class="o">&amp;</span><span class="w"> </span><span class="n">e</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="line-6"><span class="w">   </span><span class="n">y</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">gsl_spline_eval</span><span class="p">(</span><span class="n">spline</span><span class="p">,</span><span class="w"> </span><span class="n">e</span><span class="p">,</span><span class="w"> </span><span class="n">acc</span><span class="p">));</span>
+</span><span id="line-7"><span class="p">}</span>
+</span><span id="line-8"><span class="n">gsl_interp_accel_free</span><span class="p">(</span><span class="n">acc</span><span class="p">);</span>
+</span><span id="line-9"><span class="n">gsl_spline_free</span><span class="p">(</span><span class="n">spline</span><span class="p">);</span>
+</span></code></pre></div>
 </div>
 <p>Splider:</p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="k">const</span><span class="w"> </span><span class="k">auto</span><span class="w"> </span><span class="n">build</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Spline</span><span class="o">::</span><span class="n">builder</span><span class="p">(</span><span class="n">u</span><span class="p">);</span>
-<span class="k">auto</span><span class="w"> </span><span class="n">spline</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">build</span><span class="p">.</span><span class="n">spline</span><span class="p">(</span><span class="n">v</span><span class="p">);</span>
-<span class="k">auto</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">spline</span><span class="p">(</span><span class="n">x</span><span class="p">);</span>
-</pre></div>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><code><span id="line-1"><span class="k">const</span><span class="w"> </span><span class="k">auto</span><span class="w"> </span><span class="n">build</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Spline</span><span class="o">::</span><span class="n">builder</span><span class="p">(</span><span class="n">u</span><span class="p">);</span>
+</span><span id="line-2"><span class="k">auto</span><span class="w"> </span><span class="n">spline</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">build</span><span class="p">.</span><span class="n">spline</span><span class="p">(</span><span class="n">v</span><span class="p">);</span>
+</span><span id="line-3"><span class="k">auto</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">spline</span><span class="p">(</span><span class="n">x</span><span class="p">);</span>
+</span></code></pre></div>
 </div>
-<p><a class="reference external" href="https://github.com/kabasset/Splider">https://github.com/kabasset/Splider</a></p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/kabasset/Splider" rel="noreferrer" target="_blank">https://github.com/kabasset/Splider</a></p></li>
+</ul>
 </section>
 </section>
-
-
-          </div>
-              <div class="related bottom">
-                &nbsp;
-  <nav id="rellinks">
-    <ul>
-        <li>
-          &larr;
-          <a href="interests.html" title="Previous document">Interests</a>
-        </li>
-        <li>
-          <a href="resume.html" title="Next document">Resume</a>
-          &rarr;
-        </li>
-    </ul>
-  </nav>
-              </div>
-          
-        </div>
-      </div>
-      <div class="sphinxsidebar" role="navigation" aria-label="Main">
-        <div class="sphinxsidebarwrapper">
-<h1 class="logo"><a href="index.html">Antoine Basset</a></h1>
-
-
-
-
-
-
-
-
-
-<search id="searchbox" style="display: none" role="search">
-    <div class="searchformwrapper">
-    <form class="search" action="search.html" method="get">
-      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
-      <input type="submit" value="Go" />
-    </form>
-    </div>
-</search>
-<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navigation</h3>
-<ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="interests.html">Interests</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Software</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#euclid-science-ground-segment">Euclid Science Ground Segment</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#azulero">Azulero</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#linx">Linx</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#elefits">EleFits</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#splider">Splider</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="resume.html">Resume</a></li>
-<li class="toctree-l1"><a class="reference internal" href="publications.html">Publications</a></li>
-</ul>
-
-<div class="relations">
-<h3>Related Topics</h3>
+</div></div><aside class="hidden text-sm xl:block" id="right-sidebar">
+<div class="sticky top-16 -mt-10 max-h-[calc(100vh-5rem)] h-full overflow-y-auto pt-6 space-y-2"><p class="font-medium">On this page</p>
 <ul>
-  <li><a href="index.html">Documentation overview</a><ul>
-      <li>Previous: <a href="interests.html" title="previous chapter">Interests</a></li>
-      <li>Next: <a href="resume.html" title="next chapter">Resume</a></li>
-  </ul></li>
+<li><a :data-current="activeSection === '#euclid-science-ground-segment'" class="reference internal" href="#euclid-science-ground-segment">Euclid Science Ground Segment</a></li>
+<li><a :data-current="activeSection === '#azulero'" class="reference internal" href="#azulero">Azulero</a></li>
+<li><a :data-current="activeSection === '#linx'" class="reference internal" href="#linx">Linx</a></li>
+<li><a :data-current="activeSection === '#elefits'" class="reference internal" href="#elefits">EleFits</a></li>
+<li><a :data-current="activeSection === '#splider'" class="reference internal" href="#splider">Splider</a></li>
 </ul>
 </div>
-
-
-
-
-
-
-
-
-        </div>
-      </div>
-      <div class="clearer"></div>
-    </div>
-        
-    <div class="footer">
-      &#169;2023-2026, Antoine Basset.<br/>Background image: NGC 6536. Credit: ESA Euclid / Euclid Consortium / NASA / Q1-2025 / Antoine Basset (CNES).<br/>Last updated on Wednesday, October 14, 2026.
-      
-      |
-      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 9.1.0</a>
-      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
-      
-    </div>
-
-    
-
-    
-  </body>
+</aside>
+</main>
+</div>
+</div><footer class="py-6 border-t border-border md:py-0">
+<div class="container flex flex-col items-center justify-between gap-4 md:h-24 md:flex-row">
+<div class="flex flex-col items-center gap-4 px-8 md:flex-row md:gap-2 md:px-0">
+<p class="text-sm leading-loose text-center text-muted-foreground md:text-left">© 2023-2026, Antoine Basset. Last updated on October 14, 2026. Built with <a class="font-medium underline underline-offset-4" href="https://www.sphinx-doc.org" rel="noreferrer">Sphinx 9.1.0</a></p>
+</div>
+</div>
+</footer>
+</div>
+<script src="_static/documentation_options.js?v=7f41d439"></script>
+<script src="_static/doctools.js?v=fd6eb6e6"></script>
+<script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+<script defer="defer" src="_static/theme.js?v=5db23cf8"></script>
+<script src="_static/sphinxcontrib-images/LightBox2/lightbox2/dist/js/lightbox-plus-jquery.min.js?v=f0ca4bb6"></script>
+<script src="_static/sphinxcontrib-images/LightBox2/lightbox2-customize/jquery-noconflict.js?v=12818e64"></script>
+</body>
 </html>

@@ -1,0 +1,11 @@
+div.citation > span {
+  float: left;
+}
+
+div.citation > p {
+  margin-left: 4em;
+}
+
+.citation-list {
+  margin-top: calc(var(--spacing) * 6);
+}
