@@ -23,7 +23,7 @@ LE1-VIS
    including `Early Release Observations <https://www.esa.int/Science_Exploration/Space_Science/Euclid/Euclid_s_first_images_the_dazzling_edge_of_darkness>`_
    and `the 208-Gigapixel glimpse <https://www.youtube.com/watch?v=86ZCsUfgLRQ>`_.
    I have implemented the storage class for the telemetry of the VIS instrument and worked on the overall design.
-   After more than two years of operations, and 125,000 images produced, not a single bug has been found!
+   After more than two years of operations, and more than 170,000 images produced, not a single bug has been found!
 
 SIM
    As the name implies, the simulation pipeline (SIM) generates simulated images for the Euclid mission.
