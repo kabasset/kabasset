@@ -403,8 +403,9 @@ Other Projects
    ========= ====
    Graphic design
    ==============
-   2009-2023 Drawing of various logos
+   2009-2026 Drawing of various logos
    \         * Various software (see :doc:`software`)
+             * LISA DDPC (draft logo, taken over by CNES)
              * `AirExpo <http://airexpo.org/>`_ 2011-2019 (airshow)
              * Simeria (music band)
              * BudStar (CanSat team, see :doc:`interests`)
