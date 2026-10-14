@@ -12,14 +12,15 @@ Software
 Euclid Science Ground Segment
 -----------------------------
 
-As a member of the Euclid Science Ground Segment development group, I have been developping software for eight years.
+As a member of the Euclid Science Ground Segment development group,
+I have been developing software for more than a decade.
 To my knowledge, I have contributed to all of the Euclid Processing Functions but MER.
 Here is a summary of my main contributions.
 
 LE1-VIS
    The Level 1 pipeline (LE1) transforms the raw Euclid telemetry into data products usable by downstream pipelines: images and metadata.
    In other words, every Euclid image ever published or processed has been produced by LE1,
-   including `Early Realease Observations <https://www.esa.int/Science_Exploration/Space_Science/Euclid/Euclid_s_first_images_the_dazzling_edge_of_darkness>`_
+   including `Early Release Observations <https://www.esa.int/Science_Exploration/Space_Science/Euclid/Euclid_s_first_images_the_dazzling_edge_of_darkness>`_
    and `the 208-Gigapixel glimpse <https://www.youtube.com/watch?v=86ZCsUfgLRQ>`_.
    I have implemented the storage class for the telemetry of the VIS instrument and worked on the overall design.
    After more than two years of operations, and 125,000 images produced, not a single bug has been found!
@@ -51,33 +52,36 @@ as well as for the pipelines themselves.
 |clear-float|
 
 .. image:: https://raw.githubusercontent.com/kabasset/azulero/v0.1.0/azul.png
-   :alt: Azul
+   :alt: Azulero
    :width: 20%
    :align: right
-   :target: https://github.com/kabasset/azulero
+   :target: https://kabasset.github.io/azulero/versions/index.html
 
-Azul
-----
+Azulero
+-------
 
-Azul is a package aimed at streamlining the production of Public Outreach data based on Euclid scientific products.
+Azulero is a package aimed at streamlining the production of Public Outreach data based on Euclid scientific products.
 It provides tools for finding, downloading and fusing images produced by MER, as well as generating pan-and-zoom videos.
 
 Public images (data releases) can be processed by anyone outside the consortium.
 For example, the image below is produced with::
 
    pip install azulero
-   azul retrieve 102159776
-   azul process 102159776
+   azul retrieve UGC11116 PGC61356 -r 1m | azul process
 
-.. figure:: https://raw.githubusercontent.com/kabasset/azulero/develop/UGC11116.jpg
+
+.. figure:: https://kabasset.github.io/azulero/develop/_images/UGC11116_102159776.jpg
    :alt: UGC11116
-   :width: 100%
+   :width: 50%
    :align: center
-   :target: https://github.com/kabasset/azulero
+   :target: https://kabasset.github.io/azulero/versions/index.html
 
    Color image of UGC11116 produced with Azul from public Euclid Q1 data.
 
    Credit: ESA Euclid / Euclid Consortium / NASA / Q1-2025 / Antoine Basset (CNES)
+
+In addition, the whole Q1 data release was processed with Azulero by the Centre de Données de Strasbourg (CDS).
+It can be navigated and crops can be downloaded from `Azulite <https://kabasset.github.io/azulite/index.html>`_.
 
 |clear-float|
 
@@ -90,7 +94,7 @@ For example, the image below is produced with::
 Linx
 ----
 
-Linx is a C++ multidimensional image processing library focused on ease of use and performance protability.
+Linx is a C++ multidimensional image processing library prototype focused on ease of use and performance portability.
 Image processing pipelines written with Linx can run on a variety of infrastructures, including HTC, HPC and GPU farms.
 
 Here is a comparison with NumPy.
@@ -128,7 +132,7 @@ EleFits
 -------
 
 EleFits is a modern C++ package to read and write FITS files which focuses on safety, user-friendliness, and performance.
-At some point, the ND array implementation of EleFits should be droped in favor of Linx.
+At some point, the ND array implementation of EleFits should be dropped in favor of Linx.
 
 Here is a comparison with CFITSIO.
 A single-image FITS file is created from a 2D array (``(width, height) -> data``) and a keyword record (``keyword, value, comment``):

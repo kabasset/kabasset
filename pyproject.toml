@@ -1,0 +1,26 @@
+[project]
+name = "kabasset"
+version = "1.0"
+authors = [
+  {name="Basset, Antoine", email = "antoine.basset@cnes.fr"},
+]
+description = "Personal website"
+readme = "README.md"
+license = "Apache-2.0"
+license-files = ["LICEN[CS]E*"]
+dependencies = [
+  "sphinx",
+  "sphinxawesome-theme",
+  "sphinxcontrib-images",
+  "sphinxcontrib-plantuml",
+  "sphinxcontrib-video",
+  "sphinxcontrib-bibtex",
+  "sphinx-new-tab-link",
+]
+
+[project.urls]
+homepage = "https://kabasset.github.io/kabasset/"
+
+[build-system]
+requires = ["uv_build>=0.10.0,<0.11.0"]
+build-backend = "uv_build"
