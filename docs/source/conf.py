@@ -44,7 +44,7 @@ html_static_path = ["_static"]
 html_theme_path = ["_themes"]
 # html_logo = "_static/logo.png"
 html_favicon = "favicon.png"
-html_css_files = ["lists.css", "figure.css"]
+html_css_files = ["lists.css", "figure.css", "bibliography.css"]
 
 html_use_index = False
 html_permalinks = False
