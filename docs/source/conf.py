@@ -17,9 +17,9 @@ locale.setlocale(locale.LC_TIME, "en_US.utf8")
 now = datetime.now()
 init_year = 2023
 copyright_years = now.year if now.year == init_year else f"{init_year}-{now.year}"
-copyright = f"{copyright_years}, Antoine Basset.<br/>"
-copyright += f"Background image: NGC 6536. Credit: ESA Euclid / Euclid Consortium / NASA / Q1-2025 / Antoine Basset (CNES).<br/>"
-copyright += f"Last updated on {now.strftime('%A, %B %d, %Y')}"
+copyright = (
+    f"{copyright_years}, Antoine Basset. Last updated on {now.strftime('%B %d, %Y')}."
+)
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
