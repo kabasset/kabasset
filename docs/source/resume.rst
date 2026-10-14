@@ -12,7 +12,7 @@ Degrees
    PhD in Signal Processing
    =========
    2015 | Université Rennes I
-        | `(Thesis PDF) <https://ged.univ-rennes1.fr/nuxeo/site/esupversions/cb217ed5-bb4f-4ce9-8cc7-f846b7398e50?inline>`_
+        | `(Thesis PDF) <https://theses.hal.science/tel-01304780/preview/BASSET_Antoine.pdf>`_
    ==== ====
 
 .. table::

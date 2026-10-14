@@ -43,7 +43,6 @@ html_theme = "sphinxawesome_theme"
 html_title = "Antoine Basset"
 html_static_path = ["_static"]
 html_theme_path = ["_themes"]
-# html_logo = "_static/logo.png"
 html_favicon = "favicon.png"
 html_css_files = ["lists.css", "figure.css", "bibliography.css"]
 
@@ -52,6 +51,7 @@ html_permalinks = False
 html_copy_source = False
 html_show_sourcelink = False
 html_show_copyright = True
+html_scaled_image_link = False
 
 # -- Options for BibTeX ------------------------------------------------------
 # https://sphinxcontrib-bibtex.readthedocs.io/en/latest/usage.html#configuration

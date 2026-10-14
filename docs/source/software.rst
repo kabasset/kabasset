@@ -58,24 +58,26 @@ Azulero
 
 `Azulero <https://kabasset.github.io/azulero/versions/index.html>`_
 is a package aimed at streamlining the production of Public Outreach data based on Euclid scientific products.
-It provides tools for finding, downloading and fusing images produced by MER, as well as generating pan-and-zoom videos.
+It features commands for finding, downloading and blending images produced by MER, as well as post-processing utilities.
 
-Public images (data releases) can be processed by anyone outside the consortium.
-For example, the image below is produced with::
+Images from public data releases can be processed by anyone.
+The example slideshow below is produced with a single Unix `pipeline <https://kabasset.github.io/azulero/develop/pipelines.html>`_:
 
-   pip install azulero
-   azul retrieve UGC11116 PGC61356 -r 1m | azul process
+.. code-block:: console
 
+   $ xclip -o \
+   | sed 's/ //g' \
+   | azul retrieve -n 1 -r 30s \
+   | azul process \
+   | cat - <(echo " slideshow.mp4") \
+   | xargs convert -delay 50
 
-.. figure:: https://kabasset.github.io/azulero/develop/_images/UGC11116_102159776.jpg
-   :alt: UGC11116
-   :width: 50%
+.. video:: https://kabasset.github.io/azulero/develop/_images/slideshow.mp4
    :align: center
-   :target: https://kabasset.github.io/azulero/versions/index.html
-
-   Color image of UGC11116 produced with Azul from public Euclid Q1 data.
-
-   Credit: ESA Euclid / Euclid Consortium / NASA / Q1-2025 / Antoine Basset (CNES)
+   :playsinline:
+   :autoplay:
+   :loop:
+   :caption: Credit: ESA Euclid / Euclid Consortium / NASA / Q1-2025 / Antoine Basset (CNES).
 
 In addition, the whole Q1 data release was processed with Azulero by the Centre de Données de Strasbourg (CDS).
 It can be navigated and crops can be downloaded from `Azulite <https://kabasset.github.io/azulite/index.html>`_.

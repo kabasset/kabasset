@@ -7,6 +7,7 @@ Astronomy
 .. thumbnail:: _static/M42_small.jpg
    :width: 40%
    :align: right
+   :title: M42 acquired with Pic du Midi's T50 (Credit: Antoine Basset, CNES)
 
 I grew up as a star gazer and will never forget the first time I saw Saturn or the moons of Jupiter through a telescope.
 I cannot recall a time when I didn't dream of galaxies.
@@ -23,12 +24,12 @@ For sure, we live in one of the most exciting centuries to care about cosmology!
 Software Development
 --------------------
 
-.. thumbnail:: https://raw.githubusercontent.com/kabasset/IssoireLinx/develop/doc/diagrams/looping_benchmark_summary.svg
+.. image:: https://raw.githubusercontent.com/kabasset/IssoireLinx/develop/doc/diagrams/looping_benchmark_summary.svg
    :width: 30%
    :align: right
 
 As a programmer for space missions Euclid and Lisa, I develop signal processing libraries in modern C++.
-My main activies in software development relate to profiling, optimization and parallelization, aiming at better efficiency.
+My main activities in software development relate to profiling, optimization and parallelization, aiming at better efficiency.
 When developing libraries, I always focus on the user experience.
 
 `Efficiency <https://youtu.be/apJMu_CHz4A?feature=shared>`_
@@ -41,17 +42,20 @@ When developing libraries, I always focus on the user experience.
    while efficiency-oriented design aims at delivering as many results as possible in a given (longer) time with limited resources.
    Efficiency is a key factor for both better performance and greener IT, and is fundamental in the frame of Big Data systems.
 
-`Elegant APIs <https://cnes.github.io/EleFits/5.3.1/index.html>`_
+`Modern C++ <https://cnes.github.io/EleFits/5.3.1/index.html>`_
    C++ is known to be a verbose language full of boilerplate.
    Modern C++, i.e. since 2011, enables metaprogramming, and should be seen as a brand new language.
    It changes the way software is designed, e.g. thanks to mixins and compile-time computation,
-   and the way interfaces are designed, e.g. through parameter forwarding and duck typing.
-   Among others, briliant examples of such elegant APIs include the C++20 ranges library, Eigen or  Niels Lohmann's Json library.
+   and the way interfaces are defined, e.g. through parameter forwarding and duck typing.
+   Among others, brilliant examples of such elegant APIs include the C++20 ranges library, Eigen or  Niels Lohmann's Json library.
    All in all, Modern C++ gives an opportunity to write more performant software with simpler interfaces.
-   This is also true for more recent languages like Rust, which simplify the library development wrt. C++.
+
+`Elegant interfaces <https://kabasset.github.io/azulero/develop/pipelines.html>`_
    As a developer of several C++ libraries, I like to deliver APIs which yield readable user code.
-   Although the underlying design is generally complex, the user-level interfaces must feel natural.
+   Although the underlying design may be complex (not complicated), the user-level interfaces must feel natural.
    A few examples are displayed in :doc:`software`, many more are available in my libraries documentations.
+   Similarly, Azulero is popular among Euclid members thanks to its ease of use despite a wide range of features.
+   Compatibility with Unix and Windows pipelines, and ability to customize environments make it a unique tool of the Euclid ecosystem.
 
 
 Cell Biology
@@ -59,6 +63,8 @@ Cell Biology
 
 .. thumbnail:: _static/cell_diffusion.gif
    :align: right
+   :width: 30%
+   :title: Vesicle dynamics at the cell membrane observed in TIRFM (Credit: UMR144 Institut Curie)
 
 As a `PhD student <https://theses.hal.science/tel-01304780/preview/BASSET_Antoine.pdf>`_ with Inria (team Serpico),
 I have worked on the detection and estimation of dynamic events in image sequences.
@@ -83,16 +89,20 @@ CanSat
 
 .. |cansat_0| thumbnail:: _static/morpheus_test_0.jpg
    :group: cansat
+   :title: Parachute opening test
 .. |cansat_1| thumbnail:: _static/morpheus_test_1.jpg
    :group: cansat
+   :title: Parachute opening test
 .. |cansat_2| thumbnail:: _static/morpheus_test_2.jpg
    :group: cansat
+   :title: Parachute opening test
 .. |cansat_3| thumbnail:: _static/morpheus_open.jpg
    :group: cansat
+   :title: CanSat sensors and parachute actuator
 
 .. table::
    :class: subfigure
-   :widths: 20 20 20 40
+   :widths: 22 22 22 34
 
    +------------+------------+------------+------------+
    | |cansat_0| | |cansat_1| | |cansat_2| | |cansat_3| |
@@ -139,7 +149,7 @@ Here is a brief overview of the team background.
 Basset
 ------
 
-.. thumbnail:: https://upload.wikimedia.org/wikipedia/commons/6/6a/Basset_Hound_Dog_%28PSF%29.png
+.. image:: https://upload.wikimedia.org/wikipedia/commons/6/6a/Basset_Hound_Dog_%28PSF%29.png
    :width: 30%
    :align: right
 
