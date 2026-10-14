@@ -24,7 +24,11 @@ copyright += f"Last updated on {now.strftime('%A, %B %d, %Y')}"
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = ["sphinx.ext.githubpages"]
+extensions = [
+    "sphinx.ext.githubpages",
+    "sphinxcontrib.images",
+    "sphinx_new_tab_link",
+]
 source_suffix = ".rst"
 templates_path = ["_templates"]
 master_doc = "index"
@@ -34,24 +38,19 @@ pygments_style = "sphinx"
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
-html_theme = "alabaster"
+html_theme = "sphinxawesome_theme"
 html_title = "Antoine Basset"
 html_static_path = ["_static"]
 html_theme_path = ["_themes"]
 # html_logo = "_static/logo.png"
 html_favicon = "favicon.png"
-html_css_files = ["custom.css"]
+html_css_files = ["lists.css", "figure.css"]
 
 html_use_index = False
 html_permalinks = False
 html_copy_source = False
 html_show_sourcelink = False
 html_show_copyright = True
-
-html_theme_options = {
-    # 'fixed_sidebar': True,  # Cannot search if window is too small
-    "show_relbars": True,
-}
 
 # -- Options for BibTeX ------------------------------------------------------
 # https://sphinxcontrib-bibtex.readthedocs.io/en/latest/usage.html#configuration

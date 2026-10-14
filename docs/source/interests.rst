@@ -4,7 +4,7 @@ Interests
 Astronomy
 ---------
 
-.. image:: _static/M42_small.jpg
+.. thumbnail:: _static/M42_small.jpg
    :width: 40%
    :align: right
 
@@ -81,16 +81,25 @@ Membrane Dynamics
 CanSat
 ------
 
-.. image:: _static/morpheus_test_0.jpg
-.. image:: _static/morpheus_test_1.jpg
-.. image:: _static/morpheus_test_2.jpg
+.. |cansat_0| thumbnail:: _static/morpheus_test_0.jpg
+   :group: cansat
+.. |cansat_1| thumbnail:: _static/morpheus_test_1.jpg
+   :group: cansat
+.. |cansat_2| thumbnail:: _static/morpheus_test_2.jpg
+   :group: cansat
+.. |cansat_3| thumbnail:: _static/morpheus_open.jpg
+   :group: cansat
+
+.. table::
+   :class: subfigure
+   :widths: 20 20 20 40
+
+   +------------+------------+------------+------------+
+   | |cansat_0| | |cansat_1| | |cansat_2| | |cansat_3| |
+   +------------+------------+------------+------------+
 
 During my engineering school years, I have developed, built and flown a dozen CanSats in various competitions,
 generally as the leader and software developer of ISAE's team, BudStar.
-
-.. image:: _static/morpheus_open.jpg
-   :align: right
-   :width: 30%
 
 A CanSat is can-sized drone, which is fully autonomous and completes scientific missions.
 The CanSat is launched from a rocket or captive balloon at a height of a few hundred to a few thousand feet.

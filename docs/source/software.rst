@@ -1,16 +1,14 @@
 Software
 ========
 
-|clear-float|
+Euclid Science Ground Segment
+-----------------------------
 
 .. image:: https://www.esa.int/var/esa/storage/images/science_exploration/space_science/euclid/24495561-6-eng-GB/Euclid_pillars.png
    :alt: Linx
    :width: 20%
    :align: right
    :target: https://www.esa.int/Science_Exploration/Space_Science/Euclid
-
-Euclid Science Ground Segment
------------------------------
 
 As a member of the Euclid Science Ground Segment development group,
 I have been developing software for more than a decade.
@@ -49,16 +47,14 @@ I have also co-led the System-wide integration test campaigns known as Scientifi
 and developed many automated testing tools for the Euclid Archive System (EAS), for the Infrastructure Abstraction Layer (IAL), for the Common Tools,
 as well as for the pipelines themselves.
 
-|clear-float|
+Azulero
+-------
 
 .. image:: https://raw.githubusercontent.com/kabasset/azulero/v0.1.0/azul.png
    :alt: Azulero
    :width: 20%
    :align: right
    :target: https://kabasset.github.io/azulero/versions/index.html
-
-Azulero
--------
 
 Azulero is a package aimed at streamlining the production of Public Outreach data based on Euclid scientific products.
 It provides tools for finding, downloading and fusing images produced by MER, as well as generating pan-and-zoom videos.
@@ -83,16 +79,14 @@ For example, the image below is produced with::
 In addition, the whole Q1 data release was processed with Azulero by the Centre de Données de Strasbourg (CDS).
 It can be navigated and crops can be downloaded from `Azulite <https://kabasset.github.io/azulite/index.html>`_.
 
-|clear-float|
+Linx
+----
 
 .. image:: https://raw.githubusercontent.com/kabasset/Linx/develop/doc/diagrams/logo_square.svg
    :alt: Linx
    :width: 20%
    :align: right
    :target: https://github.com/kabasset/Linx
-
-Linx
-----
 
 Linx is a C++ multidimensional image processing library prototype focused on ease of use and performance portability.
 Image processing pipelines written with Linx can run on a variety of infrastructures, including HTC, HPC and GPU farms.
@@ -120,16 +114,14 @@ Linx:
 
 https://github.com/kabasset/Linx
 
-|clear-float|
+EleFits
+-------
 
 .. image:: https://raw.githubusercontent.com/CNES/EleFits/develop/doc/diagrams/out/elefits_square.svg
    :alt: EleFits
    :width: 20%
    :align: right
    :target: https://github.com/CNES/EleFits
-
-EleFits
--------
 
 EleFits is a modern C++ package to read and write FITS files which focuses on safety, user-friendliness, and performance.
 At some point, the ND array implementation of EleFits should be dropped in favor of Linx.
@@ -157,16 +149,14 @@ EleFits:
 
 https://github.com/CNES/EleFits
 
-|clear-float|
+Splider
+-------
 
 .. image:: https://raw.githubusercontent.com/kabasset/Splider/develop/doc/diagrams/logo_square.svg
    :alt: Splider
    :width: 20%
    :align: right
    :target: https://github.com/kabasset/Splider
-
-Splider
--------
 
 Splider is a cubic spline interpolation library where a spline is a list of components (intervals, knots and arguments), which each hold their cache.
 This separation yields huge speed-ups wrt. classical libraries in some cases.
@@ -194,7 +184,3 @@ Splider:
    auto y = spline(x);
 
 https://github.com/kabasset/Splider
-
-.. |clear-float| raw:: html
-
-   <div style="clear: both"></div>
