@@ -56,7 +56,8 @@ Azulero
    :align: right
    :target: https://kabasset.github.io/azulero/versions/index.html
 
-Azulero is a package aimed at streamlining the production of Public Outreach data based on Euclid scientific products.
+`Azulero <https://kabasset.github.io/azulero/versions/index.html>`_
+is a package aimed at streamlining the production of Public Outreach data based on Euclid scientific products.
 It provides tools for finding, downloading and fusing images produced by MER, as well as generating pan-and-zoom videos.
 
 Public images (data releases) can be processed by anyone outside the consortium.
@@ -79,9 +80,6 @@ For example, the image below is produced with::
 In addition, the whole Q1 data release was processed with Azulero by the Centre de Données de Strasbourg (CDS).
 It can be navigated and crops can be downloaded from `Azulite <https://kabasset.github.io/azulite/index.html>`_.
 
-* https://kabasset.github.io/azulero/versions/index.html
-* https://kabasset.github.io/azulite/index.html
-
 Linx
 ----
 
@@ -91,7 +89,8 @@ Linx
    :align: right
    :target: https://github.com/kabasset/Linx
 
-Linx is a C++ multidimensional image processing library prototype focused on ease of use and performance portability.
+`Linx <https://github.com/kabasset/Linx>`_
+is a C++ multidimensional image processing library prototype focused on ease of use and performance portability.
 Image processing pipelines written with Linx can run on a variety of infrastructures, including HTC, HPC and GPU farms.
 
 Here is a comparison with NumPy.
@@ -115,8 +114,6 @@ Linx:
    auto b = Linx::random<double>({3, 2});
    auto c = b - a;
 
-* https://github.com/kabasset/Linx
-
 EleFits
 -------
 
@@ -126,7 +123,8 @@ EleFits
    :align: right
    :target: https://github.com/CNES/EleFits
 
-EleFits is a modern C++ package to read and write FITS files which focuses on safety, user-friendliness, and performance.
+`EleFits <https://github.com/CNES/EleFits>`_
+is a modern C++ package to read and write FITS files which focuses on safety, user-friendliness, and performance.
 At some point, the ND array implementation of EleFits should be dropped in favor of Linx.
 
 Here is a comparison with CFITSIO.
@@ -150,8 +148,6 @@ EleFits:
    fits.header().write(keyword, value, "", comment);
    fits.raster().write(makeRaster(data, width, height));
 
-* https://github.com/CNES/EleFits
-
 Splider
 -------
 
@@ -161,7 +157,8 @@ Splider
    :align: right
    :target: https://github.com/kabasset/Splider
 
-Splider is a cubic spline interpolation library where a spline is a list of components (intervals, knots and arguments), which each hold their cache.
+`Splider <https://github.com/kabasset/Splider>`_
+is a cubic spline interpolation library where a spline is a list of components (intervals, knots and arguments), which each hold their cache.
 This separation yields huge speed-ups wrt. classical libraries in some cases.
 
 Here is a comparison with GSL, where an input set of knots (``u -> v``) is interpolated at a set of positions (``x``):
@@ -186,4 +183,3 @@ Splider:
    auto spline = build.spline(v);
    auto y = spline(x);
 
-* https://github.com/kabasset/Splider

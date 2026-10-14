@@ -12,7 +12,7 @@ Degrees
    PhD in Signal Processing
    =========
    2015 | Université Rennes I
-        | `(Thesis in PDF) <https://ged.univ-rennes1.fr/nuxeo/site/esupversions/cb217ed5-bb4f-4ce9-8cc7-f846b7398e50?inline>`_
+        | `(Thesis PDF) <https://ged.univ-rennes1.fr/nuxeo/site/esupversions/cb217ed5-bb4f-4ce9-8cc7-f846b7398e50?inline>`_
    ==== ====
 
 .. table::
@@ -67,6 +67,7 @@ Career
    2022-present Project `Lisa <https://www.esa.int/Science_Exploration/Space_Science/LISA>`_
    \            * System architecture
                 * Signal processing
+                * Machine Learning
                 * Software development (C++, Python, GPU)
                 * Profiling, optimization, parallelization
    2015-present Project `Euclid <https://www.esa.int/Science_Exploration/Space_Science/Euclid>`_
@@ -125,7 +126,7 @@ Career
    Intern with Eurocopter, La Courneuve (2 months)
    =========
    2009 Events
-   \    * Graphics
+   \    * Graphic design
    ==== ====
 
 Teaching
@@ -138,14 +139,14 @@ Teaching
    ========= ============================ ====
    Space missions: Ground segment
    ===========================================
-   2024      CNES-Education summer school | Measuring distances with Euclid
-                                          | (1h15)
-   2024-2025 ISAE-SUPAERO                 | The mission segment
-                                          | (2x 1h30)
-   2023-2025 CNES                         | The Euclid science ground segment
-                                          | (2x 1h30)
+   2024-2026 CNES-Education summer school | Measuring distances with Euclid
+                                          | (1h15 / 2 years)
+   2024-2026 ISAE-SUPAERO                 | The mission segment
+                                          | (1h30 / year)
+   2023-2026 CNES                         | The Euclid science ground segment
+                                          | (1h30 / year)
    2022-2023 Hanoi Uni.                   | Ground segment software
-                                          | (2x 2h, remotely)
+                                          | (2h / year, remotely)
    ========= ============================ ====
 
 .. table::
@@ -201,7 +202,7 @@ Supervision
    ==============
    2026-2028 Ivan Martin Vilchez
    \         * Bayesian inferrence
-             * Deep learning
+             * Machine learning
              * Software development (Python, GPU)
    2015-2017 Tristan Grégoire (3 years, co-supervisor)
    \         * Astronomical catalog IO library
@@ -217,7 +218,7 @@ Supervision
    ==============
    2024-2027 Tanguy Delmond (co-director)
    \         * Bayesian inference
-             * Deep learning
+             * Machine learning
              * Software development (Python, GPU)
    ========= ====
 
@@ -230,6 +231,7 @@ Supervision
    =========
    2024 Tanguy Delmond, ENSEEIHT (6 months)
    \    * Bayesian inference
+        * Machine learning
         * Source detection
         * Software development (Python)
    2017 Peter Kettig, Université Toulouse III (6 months)
@@ -267,6 +269,27 @@ Outreach
    :widths: 20 80
 
    ==== ====
+   Euclid discovers the most ancient quasar in the Universe
+   =========
+   2026 Image and `video <https://www.youtube.com/watch?v=ILX_6owtwgE>`_ production
+        of `ESA's press release <Euclid discovers the most ancient quasar in the Universe>`_
+   ==== ====
+
+.. table::
+   :width: 100%
+   :widths: 20 80
+
+   ==== ====
+   Euclid Q1: This is tile 102159776
+   =========
+   2026 `A video <https://www.youtube.com/watch?v=z1-V0zz4p_s>`_ to dive into one of Euclid tiles
+   ==== ====
+
+.. table::
+   :width: 100%
+   :widths: 20 80
+
+   ==== ====
    The Euclid mission, from the ground segment point of view
    =========
    2025 Centrale-Supelec (visiting CNES)
@@ -279,9 +302,9 @@ Outreach
    :widths: 20 80
 
    ==== ====
-   `The universe measures 1000 <https://www.youtube.com/watch?v=S_MS6loQQwo>`_
+   The universe measures 1000
    =========
-   2024 TEDx INSA Toulouse
+   2024 `TEDx INSA Toulouse <https://www.youtube.com/watch?v=S_MS6loQQwo>`_
    ==== ====
 
 .. table::
@@ -378,7 +401,7 @@ Other Projects
    :widths: 20 80
 
    ========= ====
-   Graphism
+   Graphic design
    ==============
    2009-2023 Drawing of various logos
    \         * Various software (see :doc:`software`)
