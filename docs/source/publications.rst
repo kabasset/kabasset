@@ -1,8 +1,12 @@
 Publications
 ============
 
-This page is not updated daily.
-For a more exhaustive list, see `my Research Gate profile <https://www.researchgate.net/profile/Antoine-Basset/research>`_.
+As a Euclid Builder, I am allowed to sign any Euclid publication.
+In addition to the mission reference papers, I decided to only sign research for which I had significant impact.
+Typically, ERO papers rely heavily on LE1, and EleFits was initially designed for SIR and SPE needs.
+
+This page lists selected papers and is not updated daily.
+For a more exhaustive list, refer to `my Research Gate profile <https://www.researchgate.net/profile/Antoine-Basset/research>`_.
 
 Journals
 --------
@@ -11,16 +15,6 @@ Journals
    :labelprefix: J
    :all:
 
-Journals (as a Euclid Builder)
-------------------------------
-
-As a Euclid Builder, I am allowed to sign any Euclid publication.
-As an engineer, I have decided to only sign research for which I had significant impact.
-Typically, ERO papers rely heavily on LE1, and EleFits was initially designed for SIR and SPE needs.
-
-.. bibliography:: euclid.bib
-   :labelprefix: E
-   :all:
 
 Proceedings
 -----------

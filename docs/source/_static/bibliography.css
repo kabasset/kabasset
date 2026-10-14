@@ -5,3 +5,7 @@ div.citation > span {
 div.citation > p {
   margin-left: 4em;
 }
+
+.citation-list {
+  margin-top: calc(var(--spacing) * 6);
+}
