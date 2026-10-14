@@ -79,6 +79,9 @@ For example, the image below is produced with::
 In addition, the whole Q1 data release was processed with Azulero by the Centre de Données de Strasbourg (CDS).
 It can be navigated and crops can be downloaded from `Azulite <https://kabasset.github.io/azulite/index.html>`_.
 
+* https://kabasset.github.io/azulero/versions/index.html
+* https://kabasset.github.io/azulite/index.html
+
 Linx
 ----
 
@@ -112,7 +115,7 @@ Linx:
    auto b = Linx::random<double>({3, 2});
    auto c = b - a;
 
-https://github.com/kabasset/Linx
+* https://github.com/kabasset/Linx
 
 EleFits
 -------
@@ -147,7 +150,7 @@ EleFits:
    fits.header().write(keyword, value, "", comment);
    fits.raster().write(makeRaster(data, width, height));
 
-https://github.com/CNES/EleFits
+* https://github.com/CNES/EleFits
 
 Splider
 -------
@@ -183,4 +186,4 @@ Splider:
    auto spline = build.spline(v);
    auto y = spline(x);
 
-https://github.com/kabasset/Splider
+* https://github.com/kabasset/Splider
