@@ -11,10 +11,10 @@ as an intern (epidemiology) and PhD student (cell biology).
 When I was sooo young, I have also spent a year in the aeronautical industry.
 
 This website is like an extended Curriculum Vitae.
-Below are direct links to the topics it addresses.
 
 .. toctree::
    :maxdepth: 2
+   :hidden:
 
    interests
    software
