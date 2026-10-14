@@ -1,6 +1,9 @@
 Welcome!
 ========
 
+.. thumbnail:: _static/logos.png
+   :width: 100%
+
 Welcome to my personal website!
 I'm a PhD specialized in signal and image processing,
 as well as an engineer specialized in software development focused on optimization, parallelization and efficiency.
@@ -20,3 +23,9 @@ This website is like an extended Curriculum Vitae.
    software
    resume
    publications
+
+.. video:: https://kabasset.github.io/azulero/develop/_images/slideshow.mp4
+   :align: default
+   :playsinline:
+   :autoplay:
+   :loop:

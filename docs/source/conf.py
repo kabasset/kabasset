@@ -27,6 +27,7 @@ copyright = (
 extensions = [
     "sphinx.ext.githubpages",
     "sphinxcontrib.images",
+    "sphinxcontrib.video",
     "sphinx_new_tab_link",
 ]
 source_suffix = ".rst"

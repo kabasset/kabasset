@@ -23,7 +23,7 @@ For sure, we live in one of the most exciting centuries to care about cosmology!
 Software Development
 --------------------
 
-.. image:: https://raw.githubusercontent.com/kabasset/IssoireLinx/develop/doc/diagrams/looping_benchmark_summary.svg
+.. thumbnail:: https://raw.githubusercontent.com/kabasset/IssoireLinx/develop/doc/diagrams/looping_benchmark_summary.svg
    :width: 30%
    :align: right
 
@@ -57,7 +57,7 @@ When developing libraries, I always focus on the user experience.
 Cell Biology
 ------------
 
-.. image:: _static/cell_diffusion.gif
+.. thumbnail:: _static/cell_diffusion.gif
    :align: right
 
 As a `PhD student <https://theses.hal.science/tel-01304780/preview/BASSET_Antoine.pdf>`_ with Inria (team Serpico),
@@ -139,7 +139,7 @@ Here is a brief overview of the team background.
 Basset
 ------
 
-.. image:: https://upload.wikimedia.org/wikipedia/commons/6/6a/Basset_Hound_Dog_%28PSF%29.png
+.. thumbnail:: https://upload.wikimedia.org/wikipedia/commons/6/6a/Basset_Hound_Dog_%28PSF%29.png
    :width: 30%
    :align: right
 

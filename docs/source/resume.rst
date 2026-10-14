@@ -393,7 +393,7 @@ Education
 Other Projects
 --------------
 
-.. image:: _static/logos.png
+.. thumbnail:: _static/logos.png
    :width: 100%
 
 .. table::
